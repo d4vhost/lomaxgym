@@ -1,0 +1,823 @@
+/*guia-nutricional/guia-nutricional.css*/
+
+/* ===== GUÍA NUTRICIONAL CSS - GAMA DE COLORES CONSISTENTE ===== */
+
+/* Variables de color optimizadas para legibilidad */
+:root {
+    /* Colores principales - Modo claro */
+    --nutri-primary: #1c1c1e;
+    --nutri-secondary: #5856d6;
+    --nutri-accent: #34c759;
+    --nutri-white: #ffffff;
+    --nutri-light-gray: #f8f9fa;
+    --nutri-border: rgba(0, 122, 255, 0.15);
+    --nutri-text-secondary: #666666;
+    --nutri-text-primary: #000000; /* Negro para modo claro */
+    
+    /* Backgrounds */
+    --nutri-bg-primary: #ffffff;
+    --nutri-bg-secondary: #f8f9fa;
+    --nutri-bg-tertiary: #e9ecef;
+    
+    /* Colores para elementos */
+    --nutri-success: #34c759;
+    --nutri-warning: #ff9500;
+    --nutri-danger: #ff3b30;
+    --nutri-info: #007aff;
+    
+    /* Gradientes */
+    --nutri-gradient: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
+    --nutri-gradient-light: linear-gradient(135deg, rgba(0, 122, 255, 0.1) 0%, rgba(88, 86, 214, 0.1) 100%);
+    --nutri-success-gradient: linear-gradient(135deg, #34c759 0%, #30d158 100%);
+    
+    /* Colores específicos nutricionales */
+    --nutri-calorias-color: #ff6b35;
+    --nutri-proteinas-color: #007aff;
+    --nutri-carbohidratos-color: #5856d6;
+    --nutri-grasas-color: #34c759;
+    
+    /* Sombras */
+    --card-shadow: 0 2px 12px rgba(0, 122, 255, 0.08);
+    --card-shadow-hover: 0 4px 20px rgba(0, 122, 255, 0.12);
+    
+    /* Navegación */
+    --nav-bg: rgba(248, 249, 250, 0.85);
+    --nav-border: rgba(0, 122, 255, 0.1);
+}
+
+[data-theme="dark"] {
+    /* Colores principales - Modo oscuro */
+    --nutri-primary: #0a84ff;
+    --nutri-secondary: #5e5ce6;
+    --nutri-accent: #30d158;
+    --nutri-white: #1c1c1e;
+    --nutri-light-gray: #2c2c2e;
+    --nutri-border: rgba(10, 132, 255, 0.2);
+    --nutri-text-secondary: #8e8e93;
+    --nutri-text-primary: #ffffff; /* Blanco para modo oscuro */
+    
+    /* Backgrounds para modo oscuro */
+    --nutri-bg-primary: #000000;
+    --nutri-bg-secondary: #1c1c1e;
+    --nutri-bg-tertiary: #2c2c2e;
+    
+    /* Gradientes para modo oscuro */
+    --nutri-gradient: linear-gradient(135deg, #0a84ff 0%, #5e5ce6 100%);
+    --nutri-gradient-light: linear-gradient(135deg, rgba(10, 132, 255, 0.15) 0%, rgba(94, 92, 230, 0.15) 100%);
+    
+    /* Colores nutricionales modo oscuro */
+    --nutri-calorias-color: #ff7849;
+    --nutri-proteinas-color: #0a84ff;
+    --nutri-carbohidratos-color: #5e5ce6;
+    --nutri-grasas-color: #30d158;
+    
+    /* Sombras para modo oscuro */
+    --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    --card-shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.6);
+    
+    /* Navegación modo oscuro */
+    --nav-bg: rgba(28, 28, 30, 0.85);
+    --nav-border: rgba(10, 132, 255, 0.15);
+}
+
+/* Transiciones básicas */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Layout principal */
+main {
+    padding-top: 64px;
+    background: var(--nutri-bg-primary);
+}
+
+/* Navegación */
+nav {
+    background: var(--nav-bg);
+    border-bottom: 1px solid var(--nav-border);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background: var(--nutri-bg-secondary);
+    padding: 16px 0;
+    border-bottom: 1px solid var(--nutri-border);
+}
+
+.breadcrumb .container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.breadcrumb a {
+    color: var(--nutri-text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--nutri-primary);
+    background: var(--nutri-gradient-light);
+}
+
+.separator {
+    color: var(--nutri-text-secondary);
+    font-size: 0.8rem;
+}
+
+.current {
+    color: var(--nutri-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    background: var(--nutri-gradient-light);
+    border-radius: 8px;
+}
+
+/* Perfil Nutricional */
+.perfil-nutricional {
+    padding: 40px 0 50px 0;
+    background: var(--nutri-bg-primary);
+}
+
+.perfil-nutricional h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--nutri-primary);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.perfil-nutricional p {
+    font-size: 1.125rem;
+    color: var(--nutri-text-secondary);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Perfil Grid - Cards más pequeños en fila */
+.perfil-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.perfil-card {
+    background: var(--nutri-white);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid var(--nutri-border);
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+}
+
+.perfil-card:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-3px);
+}
+
+/* Iconos específicos por perfil */
+.perfil-card:nth-child(1) .perfil-icon {
+    background: linear-gradient(135deg, var(--nutri-primary), #42a5f5);
+}
+
+.perfil-card:nth-child(2) .perfil-icon {
+    background: linear-gradient(135deg, var(--nutri-warning), #ffb74d);
+}
+
+.perfil-card:nth-child(3) .perfil-icon {
+    background: linear-gradient(135deg, var(--nutri-success), #66bb6a);
+}
+
+.perfil-card:nth-child(4) .perfil-icon {
+    background: linear-gradient(135deg, var(--nutri-secondary), #7986cb);
+}
+
+.perfil-icon {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil-icon i {
+    font-size: 1.125rem;
+    color: white;
+}
+
+.perfil-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--nutri-text-primary);
+    margin-bottom: 8px;
+}
+
+.perfil-card p {
+    color: var(--nutri-text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Nutrición Diaria */
+.nutricion-diaria {
+    padding: 50px 0;
+    background: var(--nutri-bg-secondary);
+}
+
+.loading-message {
+    text-align: center;
+    padding: 50px 20px;
+    background: var(--nutri-white);
+    border-radius: 16px;
+    border: 1px solid var(--nutri-border);
+    box-shadow: var(--card-shadow);
+}
+
+.loading-spinner {
+    font-size: 2rem;
+    color: var(--nutri-primary);
+    margin-bottom: 16px;
+}
+
+.loading-message p {
+    color: var(--nutri-text-secondary);
+    font-size: 1.125rem;
+}
+
+/* Comidas Cards */
+.comidas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.comida-card {
+    background: var(--nutri-white);
+    border: 1px solid var(--nutri-border);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+}
+
+.comida-card:hover {
+    box-shadow: var(--card-shadow-hover);
+    border-color: var(--nutri-primary);
+    transform: translateY(-2px);
+}
+
+.comida-header {
+    background: var(--nutri-gradient);
+    color: white;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.comida-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.comida-header p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.alimentos-lista {
+    margin-bottom: 20px;
+}
+
+.alimento-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: var(--nutri-bg-secondary);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border: 1px solid var(--nutri-border);
+}
+
+.alimento-nombre {
+    font-weight: 500;
+    color: var(--nutri-text-primary);
+}
+
+.alimento-cantidad {
+    font-size: 0.875rem;
+    color: var(--nutri-text-secondary);
+}
+
+.nutrientes-resumen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 16px;
+    background: var(--nutri-gradient-light);
+    border-radius: 12px;
+}
+
+.nutriente {
+    text-align: center;
+}
+
+.nutriente-valor {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--nutri-primary);
+}
+
+.nutriente-label {
+    font-size: 0.8rem;
+    color: var(--nutri-text-secondary);
+    margin-top: 2px;
+}
+
+/* Estadísticas Nutricionales */
+.estadisticas-nutricionales {
+    padding: 50px 0;
+    background: var(--nutri-bg-primary);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--nutri-primary);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* Stats Nutricionales Grid - Cards más pequeños en fila */
+.stats-nutricionales-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stat-nutricional {
+    background: var(--nutri-white);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid var(--nutri-border);
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+}
+
+.stat-nutricional:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-3px);
+}
+
+/* Iconos específicos por nutriente */
+.stat-nutricional:nth-child(1) .stat-icon {
+    background: linear-gradient(135deg, var(--nutri-calorias-color), #ff8a65);
+}
+
+.stat-nutricional:nth-child(2) .stat-icon {
+    background: linear-gradient(135deg, var(--nutri-proteinas-color), #42a5f5);
+}
+
+.stat-nutricional:nth-child(3) .stat-icon {
+    background: linear-gradient(135deg, var(--nutri-carbohidratos-color), #7986cb);
+}
+
+.stat-nutricional:nth-child(4) .stat-icon {
+    background: linear-gradient(135deg, var(--nutri-grasas-color), #66bb6a);
+}
+
+.stat-nutricional .stat-icon {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-nutricional .stat-icon i {
+    font-size: 1.125rem;
+    color: white;
+}
+
+.stat-nutricional h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* Números de estadísticas nutricionales */
+.stat-nutricional:nth-child(1) h3 { color: var(--nutri-calorias-color); }
+.stat-nutricional:nth-child(2) h3 { color: var(--nutri-proteinas-color); }
+.stat-nutricional:nth-child(3) h3 { color: var(--nutri-carbohidratos-color); }
+.stat-nutricional:nth-child(4) h3 { color: var(--nutri-grasas-color); }
+
+.stat-nutricional p {
+    color: var(--nutri-text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Consejos Nutricionales */
+.consejos-nutricionales {
+    padding: 50px 0;
+    background: var(--nutri-bg-secondary);
+}
+
+.consejos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 32px;
+}
+
+.consejo-card {
+    background: var(--nutri-white);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid var(--nutri-border);
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+}
+
+.consejo-card:hover {
+    box-shadow: var(--card-shadow-hover);
+    border-color: var(--nutri-primary);
+    transform: translateY(-3px);
+}
+
+/* Iconos de consejos */
+.consejo-card:nth-child(1) .consejo-icon {
+    background: linear-gradient(135deg, #007aff, #42a5f5);
+}
+
+.consejo-card:nth-child(2) .consejo-icon {
+    background: linear-gradient(135deg, #5856d6, #7986cb);
+}
+
+.consejo-card:nth-child(3) .consejo-icon {
+    background: linear-gradient(135deg, #34c759, #66bb6a);
+}
+
+.consejo-card:nth-child(4) .consejo-icon {
+    background: linear-gradient(135deg, #ff9500, #ffb74d);
+}
+
+.consejo-icon {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.consejo-icon i {
+    font-size: 1.125rem;
+    color: white;
+}
+
+.consejo-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--nutri-text-primary);
+    margin-bottom: 8px;
+}
+
+.consejo-card p {
+    color: var(--nutri-text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Hidratación Section */
+.hidratacion-section {
+    padding: 50px 0;
+    background: var(--nutri-bg-primary);
+}
+
+.hidratacion-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hidratacion-info h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--nutri-primary);
+    margin-bottom: 16px;
+}
+
+.hidratacion-info p {
+    color: var(--nutri-text-secondary);
+    font-size: 1.125rem;
+    margin-bottom: 32px;
+    line-height: 1.5;
+}
+
+.hidratacion-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.hidratacion-goal,
+.hidratacion-current {
+    background: var(--nutri-white);
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid var(--nutri-border);
+    box-shadow: var(--card-shadow);
+}
+
+.goal-number,
+.current-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--nutri-primary);
+    margin-bottom: 8px;
+}
+
+.goal-text,
+.current-text {
+    color: var(--nutri-text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-hidratacion {
+    background: var(--nutri-gradient);
+    color: var(--nutri-gradient);
+    border: none;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
+}
+
+.btn-hidratacion:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.1);
+}
+
+/* Water Bottle Visual */
+.hidratacion-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.water-bottle {
+    width: 120px;
+    height: 300px;
+    background: var(--nutri-white);
+    border: 3px solid var(--nutri-primary);
+    border-radius: 15px 15px 25px 25px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--card-shadow-hover);
+}
+
+.water-level {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #007aff, #42a5f5);
+    transition: height 0.5s ease;
+    border-radius: 0 0 22px 22px;
+}
+
+.bottle-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--nutri-primary);
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+/* Mensajes especiales */
+.mensaje-sin-plan,
+.mensaje-error-nutricional {
+    background: var(--nutri-white);
+    padding: 40px 24px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid var(--nutri-border);
+    box-shadow: var(--card-shadow);
+}
+
+.mensaje-sin-plan h3,
+.mensaje-error-nutricional h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--nutri-primary);
+    margin-bottom: 12px;
+}
+
+.mensaje-sin-plan p,
+.mensaje-error-nutricional p {
+    color: var(--nutri-text-secondary);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: var(--nutri-gradient);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .perfil-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .stats-nutricionales-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .consejos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .hidratacion-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 56px;
+    }
+    
+    .perfil-nutricional {
+        padding: 30px 0 40px 0;
+    }
+    
+    .perfil-nutricional h1 {
+        font-size: 2rem;
+    }
+    
+    .nutricion-diaria,
+    .estadisticas-nutricionales,
+    .consejos-nutricionales,
+    .hidratacion-section {
+        padding: 40px 0;
+    }
+    
+    .perfil-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+    .perfil-card {
+        padding: 16px;
+    }
+    
+    .stats-nutricionales-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+    .stat-nutricional {
+        padding: 16px;
+    }
+    
+    .stat-nutricional h3 {
+        font-size: 1.75rem;
+    }
+    
+    .consejos-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+    .consejo-card {
+        padding: 16px;
+    }
+    
+    .comidas-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .hidratacion-stats {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .perfil-nutricional h1 {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .perfil-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .stats-nutricionales-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .consejos-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .nutrientes-resumen {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .mensaje-sin-plan,
+    .mensaje-error-nutricional {
+        padding: 24px 16px;
+    }
+    
+    .water-bottle {
+        width: 100px;
+        height: 250px;
+    }
+}
+
+/* Estados de focus */
+.btn:focus,
+.btn-hidratacion:focus {
+    outline: 2px solid var(--nutri-primary);
+    outline-offset: 2px;
+}

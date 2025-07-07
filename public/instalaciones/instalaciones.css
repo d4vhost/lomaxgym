@@ -1,0 +1,932 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f2f9ff;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 80px; /* Ajuste para el header fijo */
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #16253D; /* Midnight blue */
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #CD7213; /* Bronze */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #EFB509; /* Golden */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #CD7213, #EFB509); /* Bronze to Golden */
+    border-radius: 2px;
+}
+
+/* Estilos de ubicaciones */
+.gym-locations {
+    padding: 60px 0;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #16253D;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.location-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilos para el mensaje de no resultados */
+.no-results-message {
+    display: none;
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.no-results-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.no-results-content i {
+    font-size: 4rem;
+    color: #CD7213;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.no-results-content h3 {
+    color: #16253D;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.no-results-content p {
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.no-results-content p:last-child {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* Resaltado de texto en búsqueda */
+mark {
+    background-color: #EFB509;
+    color: #16253D;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.location-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.location-details {
+    padding: 20px;
+}
+
+.location-details h3 {
+    color: #16253D;
+    margin-bottom: 10px;
+}
+
+.location-details p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.location-info {
+    margin-bottom: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.info-item i {
+    color: #CD7213;
+    margin-right: 10px;
+    min-width: 16px;
+    text-align: center;
+}
+
+.location-meta {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 15px;
+    color: #16253D;
+    font-weight: 600;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px; /* Ajusta el espacio entre los elementos si es necesario */
+}
+
+.location-card .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #EFB509; /* Bronze */
+    color: #16253D; /* Midnight blue */
+}
+
+.btn-primary:hover {
+    background-color: #b05d0d; /* Darker Bronze */
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(205, 114, 19, 0.2);
+}
+
+.btn-secondary {
+    background-color: #CD7213; /* Bronze */
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #d39d00; /* Darker Golden */
+    color: #16253D; /* Midnight blue */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(239, 181, 9, 0.2);
+}
+
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: #CD7213; /* Bronze */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.btn-large {
+    padding: 15px 30px;
+    font-size: 1rem;
+}
+
+/* Header */
+.main-header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo fijo a la izquierda */
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* Evita que el logo se encoja */
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #16253D;
+    margin-left: 10px;
+}
+
+/* Navegación centrada */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* Permite que la navegación ocupe el espacio disponible */
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: #16253D; /* Midnight blue */
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a i {
+    margin-right: 8px;
+    color: #CD7213; /* Bronze color para los iconos */
+}
+
+.main-nav ul li a:hover {
+    color: #CD7213; /* Bronze */
+}
+
+.main-nav ul li a.active {
+    color: #CD7213; /* Bronze */
+}
+
+.main-nav ul li a.active:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #CD7213; /* Bronze */
+    border-radius: 2px;
+}
+
+/* Botones fijos a la derecha */
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    flex-shrink: 0; /* Evita que los botones se encojan */
+}
+
+/* Hero Section (incluido por completitud) */
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(22, 37, 61, 0.8), rgba(0, 44, 84, 0.8)), url('/api/placeholder/1200/800');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: white;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #16253D; /* Midnight blue */
+    color: white;
+    padding: 70px 0 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.footer-column h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-column h3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #CD7213; /* Bronze */
+}
+
+.footer-column p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #EFB509; /* Golden */
+}
+
+/* Estilos para la columna de contacto en el footer */
+.footer-column.contact-info .info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.footer-column.contact-info .info-item i {
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
+    min-width: 16px;
+}
+
+.footer-column.contact-info .info-item p,
+.footer-column.contact-info .info-item a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.footer-column.contact-info .info-item a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para redes sociales en el footer */
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #EFB509; /* Golden */
+    color: #16253D; /* Midnight blue */
+    transform: translateY(-3px);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 992px) {
+    .header-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    
+    .main-nav ul li {
+        margin: 5px 10px;
+    }
+    
+    .nav-buttons {
+        gap: 10px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .search-container {
+        max-width: 500px;
+        margin: 25px auto;
+    }
+    
+    .gym-locations {
+        padding: 50px 0;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+/* Tablets pequeñas y móviles grandes */
+@media (max-width: 768px) {
+    body {
+        padding-top: 0; /* Quitar padding en móviles */
+    }
+    
+    .main-header {
+        position: relative; /* Cambiar a relative en móviles */
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 35px;
+    }
+    
+    .gym-locations {
+        padding: 40px 0;
+    }
+    
+    .search-container {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+    
+    .search-input {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .locations-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .location-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .location-card img {
+        height: 180px;
+    }
+    
+    .location-details {
+        padding: 18px;
+    }
+    
+    .location-details h3 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+    
+    .location-details p {
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+    }
+    
+    .location-meta {
+        margin-bottom: 12px;
+    }
+    
+    .price-item {
+        margin-bottom: 4px;
+        font-size: 0.9rem;
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+/* Móviles medianos */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .header-container {
+        padding: 10px 15px;
+    }
+    
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+    
+    .main-nav ul li {
+        margin: 5px 8px;
+    }
+    
+    .main-nav ul li a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+    
+    .nav-buttons {
+        flex-direction: row; 
+        gap: 8px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .nav-buttons .btn {
+        padding: 10px 15px;
+        font-size: 0.8rem;
+        flex: 1;
+        max-width: 140px;
+        text-align: center;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+    
+    .gym-locations {
+        padding: 35px 0;
+    }
+    
+    .search-container {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+    
+    .search-input {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+        border-radius: 25px;
+    }
+    
+    .locations-grid {
+        gap: 18px;
+        padding: 0 5px;
+    }
+    
+    .location-card {
+        max-width: 100%;
+    }
+    
+    .location-card img {
+        height: 160px;
+    }
+    
+    .location-details {
+        padding: 15px;
+    }
+    
+    .location-details h3 {
+        font-size: 1.2rem;
+        margin-bottom: 6px;
+    }
+    
+    .location-details p {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+    
+    .location-meta {
+        margin-bottom: 10px;
+    }
+    
+    .price-item {
+        margin-bottom: 3px;
+        font-size: 0.85rem;
+    }
+    
+    .location-card .btn {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        margin-top: 8px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .footer-column.brand {
+        order: -1;
+    }
+    
+    .social-media {
+        justify-content: center;
+    }
+}
+
+/* iPhone 8 y dispositivos similares (375px) */
+@media (max-width: 375px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .header-container {
+        padding: 8px 10px;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+    
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+    
+    .logo-img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .main-nav ul {
+        gap: 5px;
+    }
+    
+    .main-nav ul li {
+        margin: 3px 5px;
+    }
+    
+    .main-nav ul li a {
+        font-size: 0.8rem;
+        padding: 6px 8px;
+    }
+    
+    .main-nav ul li a i {
+        margin-right: 5px;
+        font-size: 0.8rem;
+    }
+    
+    .nav-buttons .btn {
+        padding: 8px 12px; 
+        font-size: 0.7rem;
+        max-width: 120px;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+    
+    .gym-locations {
+        padding: 30px 0;
+    }
+    
+    .search-container {
+        margin: 12px auto;
+        padding: 0 5px;
+    }
+    
+    .search-input {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+    
+    .locations-grid {
+        gap: 15px;
+        padding: 0;
+    }
+    
+    .location-card img {
+        height: 140px;
+    }
+    
+    .location-details {
+        padding: 12px;
+    }
+    
+    .location-details h3 {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
+    
+    .location-details p {
+        font-size: 0.8rem;
+        margin-bottom: 8px;
+    }
+    
+    .location-meta {
+        margin-bottom: 8px;
+    }
+    
+    .price-item {
+        margin-bottom: 2px;
+        font-size: 0.8rem;
+    }
+    
+    .location-card .btn {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+        margin-top: 6px;
+    }
+    
+    .main-footer {
+        padding: 40px 0 0;
+    }
+    
+    .footer-column h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .footer-column p {
+        font-size: 0.9rem;
+    }
+    
+    .footer-links li a {
+        font-size: 0.9rem;
+    }
+    
+    .footer-column.contact-info .info-item {
+        margin-bottom: 15px;
+    }
+    
+    .footer-column.contact-info .info-item i {
+        min-width: 14px;
+        margin-right: 8px;
+    }
+    
+    .footer-column.contact-info .info-item p,
+    .footer-column.contact-info .info-item a {
+        font-size: 0.9rem;
+    }
+    
+    .footer-bottom {
+        padding: 15px 0;
+        font-size: 0.8rem;
+    }
+}
+
+/* iPhone SE y dispositivos muy pequeños (320px) */
+@media (max-width: 320px) {
+    .section-title {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    
+    .search-input {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+    
+    .location-card img {
+        height: 120px;
+    }
+    
+    .location-details {
+        padding: 10px;
+    }
+    
+    .location-details h3 {
+        font-size: 1rem;
+    }
+    
+    .location-details p {
+        font-size: 0.75rem;
+    }
+    
+    .price-item {
+        font-size: 0.75rem;
+    }
+    
+    .location-card .btn {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+    
+    .nav-buttons .btn {
+        padding: 6px 10px;
+        font-size: 0.65rem;
+        max-width: 100px;
+    }
+    
+    .gym-locations {
+        padding: 25px 0;
+    }
+}

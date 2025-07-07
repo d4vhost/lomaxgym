@@ -1,0 +1,1134 @@
+{
+  "comidas": {
+    "Ganar masa muscular": {
+      "Ninguna": {
+        "Sedentario": {
+          "desayuno": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Colada de avena con plátano y nueces + Huevos revueltos + Vaso de leche",
+              "ingredientes": "80g avena, 1 plátano mediano, 30g nueces, 2 huevos, 1 taza (240ml) leche entera, 1 cdta miel",
+              "calorias": 680,
+              "proteinas": 28,
+              "carbohidratos": 75,
+              "grasas": 22
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Pan integral con palta y huevo + Yogur con granola",
+              "ingredientes": "2 rebanadas pan integral, 1/2 palta mediana, 1 huevo, 150g yogur griego, 40g granola",
+              "calorias": 650,
+              "proteinas": 25,
+              "carbohidratos": 68,
+              "grasas": 24
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Batido de proteínas con guineo y mantequilla de maní + Pan tostado",
+              "ingredientes": "30g proteína en polvo, 1 guineo grande, 2 cdas mantequilla de maní, 2 rebanadas pan integral",
+              "calorias": 720,
+              "proteinas": 32,
+              "carbohidratos": 70,
+              "grasas": 26
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Tortillas de verde con queso + Leche con chocolate + Almendras",
+              "ingredientes": "2 plátanos verdes medianos, 50g queso fresco, 1 taza leche, 2 cdas cacao, 30g almendras",
+              "calorias": 690,
+              "proteinas": 27,
+              "carbohidratos": 78,
+              "grasas": 23
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Quinoa con leche, canela y frutas + Huevo cocido + Jugo de naranja",
+              "ingredientes": "80g quinoa, 200ml leche, 1 cdta canela, 100g frutas mixtas, 1 huevo, 200ml jugo naranja",
+              "calorias": 660,
+              "proteinas": 26,
+              "carbohidratos": 72,
+              "grasas": 21
+            }
+          ],
+          "almuerzo": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Pollo a la plancha + Arroz con menestra + Ensalada mixta + Palta",
+              "ingredientes": "150g pechuga pollo, 100g arroz integral, 80g menestra lenteja, ensalada (lechuga 50g, tomate 80g, cebolla 30g), 1/2 palta",
+              "calorias": 750,
+              "proteinas": 45,
+              "carbohidratos": 65,
+              "grasas": 18
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Corvina al horno + Quinoa + Brócoli al vapor + Aceite de oliva",
+              "ingredientes": "150g corvina, 80g quinoa, 150g brócoli, 1 cda aceite oliva, limón y especias",
+              "calorias": 780,
+              "proteinas": 42,
+              "carbohidratos": 58,
+              "grasas": 25
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Seco de cabrito + Puré de papa + Espinacas salteadas + Nueces",
+              "ingredientes": "120g carne cabrito, 200g papa, 100g espinacas, 30g nueces, culantro, ajo, cebolla",
+              "calorias": 800,
+              "proteinas": 48,
+              "carbohidratos": 62,
+              "grasas": 22
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Fritada de cerdo + Mote + Judías verdes + Almendras",
+              "ingredientes": "120g carne cerdo magra, 150g mote cocido, 120g judías verdes, 25g almendras",
+              "calorias": 740,
+              "proteinas": 44,
+              "carbohidratos": 64,
+              "grasas": 19
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Pescado sudado + Arroz con chocho + Ensalada de palmito + Aceitunas",
+              "ingredientes": "150g pescado blanco, 100g arroz, 60g chocho, 80g palmito, 40g aceitunas, yuca 50g",
+              "calorias": 760,
+              "proteinas": 46,
+              "carbohidratos": 68,
+              "grasas": 20
+            }
+          ],
+          "merienda": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Batido de proteínas + Guineo + Mix de frutos secos",
+              "ingredientes": "30g proteína en polvo, 1 guineo mediano, 30g mix (nueces, almendras, pasas)",
+              "calorias": 420,
+              "proteinas": 25,
+              "carbohidratos": 35,
+              "grasas": 18
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Yogur con granola + Miel + Uvillas",
+              "ingredientes": "150g yogur griego, 40g granola casera, 1 cda miel, 50g uvillas",
+              "calorias": 380,
+              "proteinas": 22,
+              "carbohidratos": 38,
+              "grasas": 15
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Pan integral con mantequilla de almendra + Manzana",
+              "ingredientes": "2 rebanadas pan integral, 2 cdas mantequilla almendra, 1 manzana mediana",
+              "calorias": 410,
+              "proteinas": 12,
+              "carbohidratos": 42,
+              "grasas": 22
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Hummus con vegetales + Tostadas de quinoa + Queso",
+              "ingredientes": "60g hummus, bastones zanahoria 80g, apio 60g, 2 tostadas quinoa, 30g queso fresco",
+              "calorias": 400,
+              "proteinas": 18,
+              "carbohidratos": 35,
+              "grasas": 20
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Smoothie de frutas tropicales con proteína + Nueces mixtas",
+              "ingredientes": "30g proteína, 100g piña, 80g mango, 50g maracuyá, 200ml agua coco, 30g nueces",
+              "calorias": 430,
+              "proteinas": 24,
+              "carbohidratos": 40,
+              "grasas": 19
+            }
+          ]
+        },
+        "Ligero": {
+          "desayuno": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Colada de avena con proteína, guineo y almendras + Huevos revueltos + Leche descremada",
+              "ingredientes": "80g avena, 30g proteína polvo, 1 guineo, 30g almendras, 2 huevos, 240ml leche descremada",
+              "calorias": 750,
+              "proteinas": 35,
+              "carbohidratos": 78,
+              "grasas": 24
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Pan integral con requesón y miel + Batido de proteínas con frutas",
+              "ingredientes": "2 rebanadas pan integral, 100g requesón, 1 cda miel, 30g proteína, 150g frutas mixtas",
+              "calorias": 720,
+              "proteinas": 32,
+              "carbohidratos": 75,
+              "grasas": 22
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Granola casera con yogur + Nueces + Mora",
+              "ingredientes": "60g granola casera, 150g yogur griego, 30g nueces, 80g mora, 1 cda miel",
+              "calorias": 780,
+              "proteinas": 28,
+              "carbohidratos": 82,
+              "grasas": 28
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Bowl de quinoa con frutas + Leche de almendras + Semillas de chía",
+              "ingredientes": "80g quinoa cocida, 200ml leche almendras, 100g frutas tropicales, 2 cdas chía, canela",
+              "calorias": 740,
+              "proteinas": 25,
+              "carbohidratos": 85,
+              "grasas": 26
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Panqueques de proteína + Miel de abeja + Mantequilla de maní + Guineo",
+              "ingredientes": "40g proteína, 1 huevo, 50g harina integral, 2 cdas miel, 2 cdas mantequilla maní, 1 guineo",
+              "calorias": 790,
+              "proteinas": 38,
+              "carbohidratos": 80,
+              "grasas": 25
+            }
+          ],
+          "almuerzo": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Pollo asado + Arroz integral + Verduras salteadas + Palta + Aceite de oliva",
+              "ingredientes": "150g pollo, 120g arroz integral, 150g verduras mixtas, 1/2 palta, 1 cda aceite oliva",
+              "calorias": 850,
+              "proteinas": 52,
+              "carbohidratos": 68,
+              "grasas": 25
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Corvina al horno + Quinoa + Espárragos + Nueces + Limón",
+              "ingredientes": "150g corvina, 100g quinoa, 150g espárragos, 30g nueces, limón, especias",
+              "calorias": 880,
+              "proteinas": 48,
+              "carbohidratos": 65,
+              "grasas": 32
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Lomo saltado + Tallarines integrales + Ensalada",
+              "ingredientes": "120g lomo fino, 100g tallarines integrales, cebolla 60g, tomate 80g, ají amarillo, ensalada verde 100g",
+              "calorias": 920,
+              "proteinas": 55,
+              "carbohidratos": 75,
+              "grasas": 28
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Pavo al horno + Camote + Brócoli + Almendras + Aceite de coco",
+              "ingredientes": "150g pavo, 200g camote, 150g brócoli, 30g almendras, 1 cda aceite coco",
+              "calorias": 840,
+              "proteinas": 50,
+              "carbohidratos": 70,
+              "grasas": 24
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Atún + Arroz con frijoles + Ensalada griega + Aceitunas + Queso",
+              "ingredientes": "150g atún, 80g arroz, 60g frijoles, ensalada (lechuga, tomate, pepino) 120g, 30g aceitunas, 40g queso",
+              "calorias": 860,
+              "proteinas": 48,
+              "carbohidratos": 72,
+              "grasas": 26
+            }
+          ],
+          "merienda": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Batido post-entreno + Guineo + Mantequilla de almendra + Avena",
+              "ingredientes": "30g proteína, 1 guineo, 2 cdas mantequilla almendra, 40g avena, 200ml agua",
+              "calorias": 480,
+              "proteinas": 28,
+              "carbohidratos": 42,
+              "grasas": 20
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Yogur con granola + Miel + Nueces + Mora",
+              "ingredientes": "150g yogur griego, 40g granola, 1 cda miel, 25g nueces, 60g mora",
+              "calorias": 450,
+              "proteinas": 25,
+              "carbohidratos": 45,
+              "grasas": 18
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Sánduche de pavo + Pan integral + Palta + Tomate + Queso",
+              "ingredientes": "80g pavo, 2 rebanadas pan integral, 1/3 palta, 2 rodajas tomate, 30g queso fresco",
+              "calorias": 520,
+              "proteinas": 30,
+              "carbohidratos": 38,
+              "grasas": 24
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Bowl de smoothie + Proteína + Granola + Coco + Frutas tropicales",
+              "ingredientes": "30g proteína, 100ml leche coco, 30g granola, 20g coco rallado, 100g frutas tropicales",
+              "calorias": 490,
+              "proteinas": 26,
+              "carbohidratos": 48,
+              "grasas": 22
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Barras de proteína caseras + Leche + Frutos secos + Chocolate negro",
+              "ingredientes": "1 barra proteína casera (40g), 200ml leche, 25g mix frutos secos, 15g chocolate 70%",
+              "calorias": 460,
+              "proteinas": 24,
+              "carbohidratos": 40,
+              "grasas": 21
+            }
+          ]
+        }
+      },
+      "Gluten": {
+        "Sedentario": {
+          "desayuno": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Colada de avena sin gluten con guineo y nueces + Huevos revueltos + Leche de almendras",
+              "ingredientes": "80g avena sin gluten, 1 guineo, 30g nueces, 2 huevos, 240ml leche almendras",
+              "calorias": 670,
+              "proteinas": 26,
+              "carbohidratos": 72,
+              "grasas": 24
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Quinoa con leche de coco y frutas + Yogur sin gluten + Almendras",
+              "ingredientes": "80g quinoa, 200ml leche coco, 100g frutas mixtas, 150g yogur sin gluten, 30g almendras",
+              "calorias": 640,
+              "proteinas": 22,
+              "carbohidratos": 68,
+              "grasas": 26
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Batido de proteínas + Guineo + Mantequilla de maní + Semillas de chía",
+              "ingredientes": "30g proteína sin gluten, 1 guineo, 2 cdas mantequilla maní, 2 cdas semillas chía",
+              "calorias": 710,
+              "proteinas": 32,
+              "carbohidratos": 65,
+              "grasas": 28
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Huevos con verduras + Tortilla de yuca + Palta + Jugo de naranja",
+              "ingredientes": "2 huevos, 100g verduras mixtas, 1 tortilla yuca (80g), 1/2 palta, 200ml jugo naranja",
+              "calorias": 680,
+              "proteinas": 25,
+              "carbohidratos": 70,
+              "grasas": 25
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Bowl de smoothie con avena sin gluten + Proteína + Coco + Mora",
+              "ingredientes": "80g avena sin gluten, 30g proteína, 30g coco rallado, 80g mora, 200ml leche almendras",
+              "calorias": 650,
+              "proteinas": 28,
+              "carbohidratos": 66,
+              "grasas": 23
+            }
+          ],
+          "almuerzo": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Pollo asado + Arroz integral + Verduras salteadas + Aceite de oliva",
+              "ingredientes": "150g pollo, 100g arroz integral, 150g verduras mixtas, 1 cda aceite oliva",
+              "calorias": 740,
+              "proteinas": 44,
+              "carbohidratos": 62,
+              "grasas": 20
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Corvina + Quinoa + Espinacas + Palta + Limón",
+              "ingredientes": "150g corvina, 80g quinoa, 100g espinacas, 1/2 palta, limón y especias",
+              "calorias": 770,
+              "proteinas": 42,
+              "carbohidratos": 58,
+              "grasas": 26
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Carne magra + Camote asado + Brócoli + Nueces",
+              "ingredientes": "120g carne res magra, 200g camote, 150g brócoli, 30g nueces",
+              "calorias": 790,
+              "proteinas": 46,
+              "carbohidratos": 64,
+              "grasas": 24
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Pavo + Arroz con frijoles + Ensalada mixta + Aceitunas",
+              "ingredientes": "150g pavo, 80g arroz, 60g frijoles, ensalada verde 100g, 30g aceitunas",
+              "calorias": 750,
+              "proteinas": 45,
+              "carbohidratos": 66,
+              "grasas": 22
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Pescado blanco + Quinoa + Verduras asadas + Semillas de girasol",
+              "ingredientes": "150g pescado, 80g quinoa, 150g verduras asadas, 25g semillas girasol",
+              "calorias": 760,
+              "proteinas": 43,
+              "carbohidratos": 60,
+              "grasas": 25
+            }
+          ],
+          "merienda": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Yogur sin gluten + Frutas + Granola sin gluten + Miel",
+              "ingredientes": "150g yogur sin gluten, 80g frutas, 30g granola sin gluten, 1 cda miel",
+              "calorias": 380,
+              "proteinas": 18,
+              "carbohidratos": 42,
+              "grasas": 16
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Batido de proteínas + Guineo + Mantequilla de almendra",
+              "ingredientes": "30g proteína sin gluten, 1 guineo, 2 cdas mantequilla almendra",
+              "calorias": 420,
+              "proteinas": 24,
+              "carbohidratos": 35,
+              "grasas": 20
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Hummus + Vegetales + Tostadas de quinoa + Queso",
+              "ingredientes": "60g hummus, 100g vegetales, 2 tostadas quinoa, 30g queso fresco",
+              "calorias": 400,
+              "proteinas": 16,
+              "carbohidratos": 38,
+              "grasas": 22
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Smoothie de frutas + Proteína + Coco + Semillas de chía",
+              "ingredientes": "30g proteína, 100g frutas tropicales, 200ml leche coco, 2 cdas chía",
+              "calorias": 410,
+              "proteinas": 22,
+              "carbohidratos": 40,
+              "grasas": 18
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Mix de frutos secos + Frutas deshidratadas + Chocolate negro sin gluten",
+              "ingredientes": "40g mix frutos secos, 30g frutas deshidratadas, 20g chocolate negro sin gluten",
+              "calorias": 430,
+              "proteinas": 12,
+              "carbohidratos": 45,
+              "grasas": 24
+            }
+          ]
+        }
+      }
+    },
+    "Perder grasa": {
+      "Ninguna": {
+        "Sedentario": {
+          "desayuno": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Colada de avena + 3 claras de huevo revueltas + 1 taza de papaya picada",
+              "ingredientes": "3 claras de huevo, 40g avena, 150g papaya, 1 taza agua, canela al gusto",
+              "calorias": 320,
+              "proteinas": 22,
+              "carbohidratos": 42,
+              "grasas": 6
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Yogur natural + 30g granola casera + 1 cucharadita miel de abeja",
+              "ingredientes": "200g yogur natural descremado, 30g granola, 5g miel de abeja, canela",
+              "calorias": 280,
+              "proteinas": 20,
+              "carbohidratos": 38,
+              "grasas": 5
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Batido verde con guineo + espinaca + proteína",
+              "ingredientes": "1 scoop proteína whey, 100g espinaca, 1 guineo mediano, 200ml agua de coco",
+              "calorias": 310,
+              "proteinas": 25,
+              "carbohidratos": 35,
+              "grasas": 4
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Tostada integral + tomate riñón + claras + aromática de hierba luisa",
+              "ingredientes": "2 rebanadas pan integral, 3 claras de huevo, 1 tomate riñón mediano, hierba luisa",
+              "calorias": 290,
+              "proteinas": 18,
+              "carbohidratos": 40,
+              "grasas": 6
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Colada de machica + manzana + 10 almendras",
+              "ingredientes": "40g machica, 1 manzana mediana, 1 scoop proteína, 10 almendras, canela",
+              "calorias": 330,
+              "proteinas": 24,
+              "carbohidratos": 44,
+              "grasas": 7
+            }
+          ],
+          "almuerzo": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Pollo a la plancha + ensalada mixta + 1/2 taza quinoa cocinada",
+              "ingredientes": "120g pechuga de pollo, 150g lechuga/tomate/cebolla, 60g quinoa, 5ml aceite oliva",
+              "calorias": 420,
+              "proteinas": 38,
+              "carbohidratos": 35,
+              "grasas": 8
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Corvina al vapor + verduras + 1/2 taza arroz integral",
+              "ingredientes": "130g corvina, 200g brócoli/zanahoria, 60g arroz integral, limón, cilantro",
+              "calorias": 380,
+              "proteinas": 35,
+              "carbohidratos": 32,
+              "grasas": 7
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Pavo magro + ensalada de col + camote asado pequeño",
+              "ingredientes": "120g pavo, 150g col/zanahoria rallada, 100g camote, vinagre, sal",
+              "calorias": 400,
+              "proteinas": 36,
+              "carbohidratos": 38,
+              "grasas": 6
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Trucha pequeña + espárragos + brócoli + limón",
+              "ingredientes": "140g trucha, 150g espárragos, 100g brócoli, 1 limón, perejil",
+              "calorias": 390,
+              "proteinas": 34,
+              "carbohidratos": 25,
+              "grasas": 15
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Pollo + ensalada de achogcha + pepino + vinagre de chicha",
+              "ingredientes": "130g pollo, 100g achogcha, 50g pepino, 100g lechuga, vinagre de chicha",
+              "calorias": 360,
+              "proteinas": 40,
+              "carbohidratos": 20,
+              "grasas": 9
+            }
+          ],
+          "merienda": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Batido de proteína + agua + hielo + stevia + canela",
+              "ingredientes": "1 scoop proteína whey, 300ml agua, hielo, stevia al gusto, canela",
+              "calorias": 180,
+              "proteinas": 25,
+              "carbohidratos": 8,
+              "grasas": 2
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Yogur natural + mora + 1 cucharada granola",
+              "ingredientes": "150g yogur descremado, 80g mora, 15g granola casera",
+              "calorias": 200,
+              "proteinas": 15,
+              "carbohidratos": 22,
+              "grasas": 4
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Manzana + 10 nueces + té de manzanilla",
+              "ingredientes": "1 manzana mediana, 10g nueces, té de manzanilla",
+              "calorias": 170,
+              "proteinas": 5,
+              "carbohidratos": 20,
+              "grasas": 8
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Gelatina de proteínas + uvillas + menta",
+              "ingredientes": "1 sobre gelatina sin azúcar, 1 scoop proteína, 60g uvillas, menta fresca",
+              "calorias": 150,
+              "proteinas": 20,
+              "carbohidratos": 15,
+              "grasas": 1
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Zanahoria/apio + 2 cucharadas chocho + agua con limón",
+              "ingredientes": "100g zanahoria, 50g apio, 30g chocho, 1 limón, agua",
+              "calorias": 160,
+              "proteinas": 8,
+              "carbohidratos": 18,
+              "grasas": 6
+            }
+          ]
+        },
+        "Ligero": {
+          "desayuno": [
+            {
+              "dia": "Lunes",
+              "descripcion": "3 claras + verduras + avena + proteína + naranjilla",
+              "ingredientes": "3 claras huevo, 100g espinaca/tomate, 50g avena, 1 scoop proteína, 1 naranjilla",
+              "calorias": 380,
+              "proteinas": 28,
+              "carbohidratos": 45,
+              "grasas": 8
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Yogur griego + granola + frutillas + almendras + miel",
+              "ingredientes": "200g yogur griego, 40g granola, 100g frutillas, 10g almendras, 8g miel",
+              "calorias": 350,
+              "proteinas": 22,
+              "carbohidratos": 42,
+              "grasas": 10
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Batido verde + proteína + espinaca + manzana + agua de coco",
+              "ingredientes": "1 scoop proteína, 120g espinaca, 1 manzana, 250ml agua de coco",
+              "calorias": 370,
+              "proteinas": 30,
+              "carbohidratos": 38,
+              "grasas": 6
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Tostadas integrales + jamón de pavo + tomate + aguacate + té",
+              "ingredientes": "2 tostadas integrales, 60g jamón pavo, 1 tomate, 30g aguacate, té verde",
+              "calorias": 360,
+              "proteinas": 25,
+              "carbohidratos": 40,
+              "grasas": 9
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Panqueques de quinoa + babaco + miel de abeja + canela",
+              "ingredientes": "60g harina quinoa, 2 huevos, 150g babaco, 10g miel abeja, canela",
+              "calorias": 390,
+              "proteinas": 32,
+              "carbohidratos": 44,
+              "grasas": 7
+            }
+          ],
+          "almuerzo": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Pollo grillado + ensalada mixta + quinoa + aceite de oliva",
+              "ingredientes": "140g pollo, 200g lechuga/tomate/cebolla, 80g quinoa, 10ml aceite oliva",
+              "calorias": 480,
+              "proteinas": 42,
+              "carbohidratos": 38,
+              "grasas": 12
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Corvina + verduras asadas + arroz integral + limón + cilantro",
+              "ingredientes": "150g corvina, 200g calabaza/zanahoria, 80g arroz integral, limón, cilantro",
+              "calorias": 450,
+              "proteinas": 40,
+              "carbohidratos": 35,
+              "grasas": 10
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Carne de res magra + ensalada + yuca + especias + vinagre",
+              "ingredientes": "120g carne res, 150g ensalada mixta, 120g yuca, especias, vinagre",
+              "calorias": 470,
+              "proteinas": 38,
+              "carbohidratos": 42,
+              "grasas": 9
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Trucha + espárragos + brócoli + quinoa + aceite de coco",
+              "ingredientes": "140g trucha, 150g espárragos, 100g brócoli, 60g quinoa, 8g aceite coco",
+              "calorias": 460,
+              "proteinas": 36,
+              "carbohidratos": 32,
+              "grasas": 18
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Pavo + ensalada de col + pan integral + queso fresco",
+              "ingredientes": "140g pavo, 180g ensalada col, 2 rebanadas pan integral, 20g queso fresco",
+              "calorias": 440,
+              "proteinas": 44,
+              "carbohidratos": 28,
+              "grasas": 14
+            }
+          ],
+          "merienda": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Batido post-entreno + guineo + proteína + agua + hielo",
+              "ingredientes": "1 scoop proteína, 1 guineo mediano, 300ml agua, hielo",
+              "calorias": 250,
+              "proteinas": 30,
+              "carbohidratos": 25,
+              "grasas": 3
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Yogur natural + granola + nueces + miel + canela",
+              "ingredientes": "180g yogur natural, 30g granola, 12g nueces, 8g miel, canela",
+              "calorias": 280,
+              "proteinas": 18,
+              "carbohidratos": 32,
+              "grasas": 8
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Manzana + mantequilla de maní + agua con gas",
+              "ingredientes": "1 manzana mediana, 15g mantequilla maní, agua con gas",
+              "calorias": 240,
+              "proteinas": 6,
+              "carbohidratos": 25,
+              "grasas": 12
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Smoothie proteína + mora + espinaca + agua",
+              "ingredientes": "1 scoop proteína, 100g mora, 80g espinaca, 250ml agua",
+              "calorias": 220,
+              "proteinas": 25,
+              "carbohidratos": 20,
+              "grasas": 4
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Chocho + zanahoria + tostadas de yuca + té cedrón",
+              "ingredientes": "40g chocho, 100g zanahoria, 30g tostadas yuca, té cedrón",
+              "calorias": 260,
+              "proteinas": 10,
+              "carbohidratos": 28,
+              "grasas": 12
+            }
+          ]
+        }
+      }
+    },
+    "Tonificar": {
+      "Ninguna": {
+        "Sedentario": {
+          "desayuno": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Colada de machica + guineo + almendras + huevo + té hierba luisa",
+              "ingredientes": "60g machica, 1 guineo grande, 15g almendras, 1 huevo cocido, té hierba luisa",
+              "calorias": 520,
+              "proteinas": 24,
+              "carbohidratos": 58,
+              "grasas": 16
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Yogur natural + granola + claudias + nueces + miel abeja",
+              "ingredientes": "250g yogur natural, 50g granola, 120g claudias, 20g nueces, 15g miel",
+              "calorias": 480,
+              "proteinas": 22,
+              "carbohidratos": 52,
+              "grasas": 18
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Tostadas integrales + aguacate + huevo + tomate + jugo naranja",
+              "ingredientes": "3 tostadas integrales, 60g aguacate, 1 huevo, 1 tomate, 200ml jugo naranja",
+              "calorias": 510,
+              "proteinas": 20,
+              "carbohidratos": 54,
+              "grasas": 20
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Batido proteína + avena + uvillas + semillas chía",
+              "ingredientes": "1 scoop proteína, 60g avena, 100g uvillas, 15g semillas chía",
+              "calorias": 490,
+              "proteinas": 26,
+              "carbohidratos": 50,
+              "grasas": 15
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Quinoa breakfast + leche almendras + coco + mango + proteína",
+              "ingredientes": "70g quinoa, 250ml leche almendras, 30g coco rallado, 150g mango, 1 scoop proteína",
+              "calorias": 500,
+              "proteinas": 25,
+              "carbohidratos": 56,
+              "grasas": 14
+            }
+          ],
+          "almuerzo": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Pollo grillado + arroz integral + verduras mixtas + aceite oliva",
+              "ingredientes": "160g pollo, 100g arroz integral, 200g verduras variadas, 15ml aceite oliva",
+              "calorias": 580,
+              "proteinas": 40,
+              "carbohidratos": 52,
+              "grasas": 16
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Trucha + quinoa + espinaca + aguacate + limón",
+              "ingredientes": "150g trucha, 90g quinoa, 150g espinaca, 40g aguacate, 1 limón",
+              "calorias": 620,
+              "proteinas": 38,
+              "carbohidratos": 48,
+              "grasas": 22
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Carne magra + camote + brócoli + almendras + especias",
+              "ingredientes": "140g carne res, 150g camote, 150g brócoli, 20g almendras, especias",
+              "calorias": 600,
+              "proteinas": 42,
+              "carbohidratos": 50,
+              "grasas": 18
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Corvina + tallarín integral + verduras + aceitunas + queso",
+              "ingredientes": "130g corvina, 100g tallarín integral, 180g verduras, 15g aceitunas, 25g queso",
+              "calorias": 590,
+              "proteinas": 36,
+              "carbohidratos": 58,
+              "grasas": 15
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Pavo + arroz con frejol + ensalada mixta + queso fresco",
+              "ingredientes": "150g pavo, 80g arroz, 60g frejol, 150g ensalada, 30g queso fresco",
+              "calorias": 610,
+              "proteinas": 44,
+              "carbohidratos": 54,
+              "grasas": 17
+            }
+          ],
+          "merienda": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Batido proteína + avena + mora + almendras",
+              "ingredientes": "1 scoop proteína, 40g avena, 100g mora, 15g almendras",
+              "calorias": 350,
+              "proteinas": 24,
+              "carbohidratos": 36,
+              "grasas": 12
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Yogur natural + granola + frutillas + miel",
+              "ingredientes": "200g yogur natural, 35g granola, 100g frutillas, 10g miel",
+              "calorias": 340,
+              "proteinas": 20,
+              "carbohidratos": 38,
+              "grasas": 10
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Tostadas yuca + atún + aguacate + tomate",
+              "ingredientes": "40g tostadas yuca, 80g atún en agua, 30g aguacate, 50g tomate",
+              "calorias": 360,
+              "proteinas": 26,
+              "carbohidratos": 30,
+              "grasas": 14
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Smoothie guineo + leche vegetal + semillas chía",
+              "ingredientes": "1 guineo grande, 250ml leche vegetal, 1 scoop proteína, 15g chía",
+              "calorias": 330,
+              "proteinas": 22,
+              "carbohidratos": 34,
+              "grasas": 11
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Barra proteína + granadilla + agua con limón",
+              "ingredientes": "1 barra proteína casera, 2 granadillas, agua con limón",
+              "calorias": 320,
+              "proteinas": 20,
+              "carbohidratos": 28,
+              "grasas": 12
+            }
+          ]
+        }
+      },
+      "Gluten": {
+        "Sedentario": {
+          "desayuno": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Quinoa cocida (80g) + Plátano maduro (1 unidad mediana) + Maní tostado (20g) + Leche de coco (200ml)",
+              "calorias": 510,
+              "proteinas": 22,
+              "carbohidratos": 52,
+              "grasas": 14
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Yogur de leche de cabra (150g) + Naranjilla picada (100g) + Babaco (80g) + Miel de abeja (15ml) + Semillas de chía (10g)",
+              "calorias": 480,
+              "proteinas": 20,
+              "carbohidratos": 50,
+              "grasas": 16
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Huevos criollos revueltos (2 unidades) + Yuca hervida (100g) + Aguacate (50g)",
+              "calorias": 490,
+              "proteinas": 24,
+              "carbohidratos": 46,
+              "grasas": 18
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Batido de tomate de árbol (150g) + Uvillas (50g) + Semillas de zambo (15g) + Leche de quinoa (200ml)",
+              "calorias": 500,
+              "proteinas": 25,
+              "carbohidratos": 48,
+              "grasas": 17
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Proteína de chocho (30g) + Machica de cebada sin gluten (60g) + Coco rallado (20g) + Mortiño (80g)",
+              "calorias": 520,
+              "proteinas": 28,
+              "carbohidratos": 54,
+              "grasas": 15
+            }
+          ],
+          "almuerzo": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Pollo criollo a la plancha (120g) + Arroz de cebada (100g) + Ensalada de acelga (80g) + Berros (50g) + Aceite de achiote (10ml)",
+              "calorias": 570,
+              "proteinas": 38,
+              "carbohidratos": 46,
+              "grasas": 16
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Trucha serrana (150g) + Quinoa tricolor (80g) + Espárragos silvestres (100g) + Aguacate (40g)",
+              "calorias": 600,
+              "proteinas": 36,
+              "carbohidratos": 44,
+              "grasas": 20
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Carne de res criolla (110g) + Puré de papa chola (120g) + Sambo tierno al vapor (80g) + Zanahoria blanca (60g)",
+              "calorias": 580,
+              "proteinas": 40,
+              "carbohidratos": 48,
+              "grasas": 18
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Pavo de campo (120g) + Camote morado asado (130g) + Vainitas tiernas (90g)",
+              "calorias": 560,
+              "proteinas": 35,
+              "carbohidratos": 50,
+              "grasas": 15
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Corvina del Pacífico (140g) + Arroz con chocho (100g) + Ensalada de lechuga criolla (70g) + Tomate riñón (60g)",
+              "calorias": 590,
+              "proteinas": 38,
+              "carbohidratos": 52,
+              "grasas": 17
+            }
+          ],
+          "merienda": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Yogur de cabra (100g) + Semillas de girasol (15g) + Claudia picada (80g) + Taxo (60g)",
+              "calorias": 310,
+              "proteinas": 18,
+              "carbohidratos": 30,
+              "grasas": 10
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Batido de chocho (25g) + Guineo maduro (1 unidad) + Mantequilla de maní de Esmeraldas (15g)",
+              "calorias": 340,
+              "proteinas": 24,
+              "carbohidratos": 28,
+              "grasas": 12
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Hummus de chocho (60g) + Jícama en bastones (80g) + Nueces de nogal (20g)",
+              "calorias": 320,
+              "proteinas": 14,
+              "carbohidratos": 26,
+              "grasas": 14
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Smoothie de guanábana (120g) + Leche de almendras (150ml) + Semillas de chía (8g)",
+              "calorias": 330,
+              "proteinas": 20,
+              "carbohidratos": 30,
+              "grasas": 12
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Barra de quinoa y amaranto casera (40g) + Agua de coco tierno (200ml) + Tuna (80g)",
+              "calorias": 350,
+              "proteinas": 16,
+              "carbohidratos": 34,
+              "grasas": 13
+            }
+          ]
+        },
+        "Ligero": {
+          "desayuno": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Colada de quinoa (100g quinoa) + Leche de coco (250ml) + Plátano seda (1 unidad) + Almendras tostadas (25g)",
+              "calorias": 560,
+              "proteinas": 24,
+              "carbohidratos": 58,
+              "grasas": 18
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Smoothie de proteína de chocho (35g) + Mango de Manila (120g) + Mantequilla de sacha inchi (20g)",
+              "calorias": 540,
+              "proteinas": 26,
+              "carbohidratos": 56,
+              "grasas": 17
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Huevos de campo revueltos (2 unidades) + Tortillas de yuca (2 unidades 80g) + Aguacate (60g) + Jugo de naranja (200ml)",
+              "calorias": 580,
+              "proteinas": 28,
+              "carbohidratos": 54,
+              "grasas": 20
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Panqueques de plátano verde (100g) + Uvillas (70g) + Miel de panela (20ml) + Semillas de zambo (15g)",
+              "calorias": 570,
+              "proteinas": 25,
+              "carbohidratos": 60,
+              "grasas": 16
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Granola de quinoa inflada (80g) + Yogur de cabra (150g) + Mortiño (60g) + Capulí (50g) + Chía (12g)",
+              "calorias": 590,
+              "proteinas": 27,
+              "carbohidratos": 58,
+              "grasas": 18
+            }
+          ],
+          "almuerzo": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Pollo criollo grillado (140g) + Quinoa roja (100g) + Ensalada de achogcha (80g) + Nueces del Brasil (25g)",
+              "calorias": 610,
+              "proteinas": 38,
+              "carbohidratos": 52,
+              "grasas": 20
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Salmón (cuando disponible) o Trucha (160g) + Puré de camote morado (130g) + Vainitas del país (100g)",
+              "calorias": 630,
+              "proteinas": 36,
+              "carbohidratos": 50,
+              "grasas": 22
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Pavo de campo al horno (130g) + Arroz integral de altura (110g) + Acelgas salteadas (100g) + Culantro (20g)",
+              "calorias": 620,
+              "proteinas": 40,
+              "carbohidratos": 54,
+              "grasas": 18
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Carne de res criolla (120g) + Menestra de fréjol canario (100g) + Espinaca de agua (80g) + Aceite de oliva (12ml)",
+              "calorias": 600,
+              "proteinas": 42,
+              "carbohidratos": 48,
+              "grasas": 19
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Corvina del Pacífico (150g) + Ensalada de garbanzo tostado (80g) + Zanahoria amarilla cocida (90g)",
+              "calorias": 610,
+              "proteinas": 35,
+              "carbohidratos": 50,
+              "grasas": 20
+            }
+          ],
+          "merienda": [
+            {
+              "dia": "Lunes",
+              "descripcion": "Batido proteico de chocho (30g) + Tostadas de plátano verde (60g) + Mermelada de guayaba (20g)",
+              "calorias": 360,
+              "proteinas": 24,
+              "carbohidratos": 32,
+              "grasas": 13
+            },
+            {
+              "dia": "Martes",
+              "descripcion": "Yogur de cabra (120g) + Pepas de sambo tostadas (18g) + Chirimoya (100g)",
+              "calorias": 340,
+              "proteinas": 20,
+              "carbohidratos": 30,
+              "grasas": 12
+            },
+            {
+              "dia": "Miércoles",
+              "descripcion": "Smoothie de avena libre de gluten (70g) + Mango criollo (90g) + Chía (10g) + Leche de quinoa (180ml)",
+              "calorias": 370,
+              "proteinas": 22,
+              "carbohidratos": 34,
+              "grasas": 15
+            },
+            {
+              "dia": "Jueves",
+              "descripcion": "Barras energéticas de amaranto y quinoa caseras (45g) + Té de cedrón (250ml)",
+              "calorias": 350,
+              "proteinas": 18,
+              "carbohidratos": 30,
+              "grasas": 14
+            },
+            {
+              "dia": "Viernes",
+              "descripcion": "Granadilla (2 unidades) + Maní de la Costa (25g) + Agua de coco natural (250ml)",
+              "calorias": 330,
+              "proteinas": 14,
+              "carbohidratos": 32,
+              "grasas": 13
+            }
+          ]
+        }
+      }
+    }
+  }
+}

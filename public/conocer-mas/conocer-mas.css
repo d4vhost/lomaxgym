@@ -1,0 +1,968 @@
+/* Estilos específicos para la página Conoce Más de Lomax Fitness */
+
+/* Ajustes del Hero para la página Conoce Más */
+.about-hero {
+    height: 60vh;
+    background-image: linear-gradient(rgba(22, 37, 61, 0.8), rgba(0, 44, 84, 0.8)), url('../img/about-background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.about-hero .hero-content {
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.about-hero h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/* Sección Filosofía y Misión */
+.philosophy-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.column-content {
+    padding-right: 20px;
+}
+
+.column-image {
+    text-align: center;
+}
+
+.rounded-image {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.rounded-image:hover {
+    transform: scale(1.02);
+}
+
+.mission-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.mission-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.value-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.value-item i {
+    font-size: 2.5rem;
+    color: #CD7213; /* Bronze */
+    margin-bottom: 15px;
+}
+
+.value-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #16253D; /* Midnight blue */
+}
+
+.value-item p {
+    color: #555;
+}
+
+/* Sección Horarios y Accesibilidad */
+.schedule-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f6f9fc, #f0f4fa);
+}
+
+.schedule-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.schedule-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.schedule-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.card-icon i {
+    font-size: 2.5rem;
+    color: #CD7213; /* Bronze */
+}
+
+.schedule-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #16253D; /* Midnight blue */
+}
+
+.schedule-card p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hours-list, .accessibility-list {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.hours-list li, .accessibility-list li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.accessibility-list li i {
+    color: #EFB509; /* Golden */
+    margin-right: 10px;
+}
+
+.address {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.btn-outline-small {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #CD7213; /* Bronze */
+    border-radius: 25px;
+    color: #CD7213; /* Bronze */
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-small:hover {
+    background-color: #CD7213; /* Bronze */
+    color: white;
+}
+
+/* Sección Servicios Destacados */
+.services-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #f8f9fa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: #CD7213; /* Bronze */
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #16253D; /* Midnight blue */
+}
+
+.service-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Sección Instalaciones */
+.facilities-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f6f9fc, #f0f4fa);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(22, 37, 61, 0.8); /* Midnight blue */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Sección Tecnología y Seguimiento */
+.tech-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.tech-list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.tech-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.tech-list li i {
+    font-size: 2rem;
+    color: #CD7213; /* Bronze */
+    margin-right: 20px;
+    min-width: 40px;
+}
+
+.tech-list li h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #16253D; /* Midnight blue */
+}
+
+.tech-list li p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Sección Testimonios Extendidos */
+.testimonials-extended {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f6f9fc, #f0f4fa);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-item {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+    padding: 30px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    color: #555;
+    line-height: 1.8;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.author-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #16253D; /* Midnight blue */
+}
+
+.author-info p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Sección FAQ */
+.faq-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+}
+
+.faq-item {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #16253D; /* Midnight blue */
+    position: relative;
+    padding-left: 25px;
+}
+
+.faq-item h3:before {
+    content: '\f059';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #CD7213; /* Bronze */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.faq-item p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Media Queries */
+/* Media Queries para responsividad optimizadas - Conocer Más */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 992px) {
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-hero h2 {
+        font-size: 1.2rem;
+    }
+    
+    .two-column-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .column-image {
+        grid-row: 1;
+        margin-bottom: 20px;
+    }
+    
+    .column-content {
+        padding-right: 0;
+    }
+    
+    .mission-values {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .schedule-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .faq-item {
+        min-width: auto;
+    }
+}
+
+/* Tablets pequeñas y móviles grandes */
+@media (max-width: 768px) {
+    .about-hero {
+        height: 50vh;
+        padding-top: 20px;
+    }
+    
+    .about-hero h1 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .about-hero h2 {
+        font-size: 1.1rem;
+    }
+    
+    .philosophy-section,
+    .schedule-section,
+    .services-section,
+    .facilities-section,
+    .tech-section,
+    .testimonials-extended,
+    .faq-section {
+        padding: 60px 0;
+    }
+    
+    .mission-values {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    
+    .value-item {
+        padding: 20px;
+    }
+    
+    .schedule-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .schedule-card {
+        padding: 25px;
+    }
+    
+    .card-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .card-icon i {
+        font-size: 2rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .service-card {
+        padding: 25px;
+    }
+    
+    .service-card i {
+        font-size: 2.5rem;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .tech-list li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .tech-list li i {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .testimonial-author {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .author-img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Móviles medianos */
+@media (max-width: 576px) {
+    .about-hero {
+        min-height: 40vh;
+        padding: 30px 0;
+    }
+    
+    .about-hero h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+    
+    .about-hero h2 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .philosophy-section,
+    .schedule-section,
+    .services-section,
+    .facilities-section,
+    .tech-section,
+    .testimonials-extended,
+    .faq-section {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    .mission-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    
+    .value-item {
+        padding: 15px;
+    }
+    
+    .value-item i {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+    
+    .value-item h3 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    
+    .schedule-card {
+        padding: 20px;
+    }
+    
+    .card-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .card-icon i {
+        font-size: 1.8rem;
+    }
+    
+    .schedule-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+    
+    .service-card {
+        padding: 20px;
+    }
+    
+    .service-card i {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .service-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+    
+    .service-card p {
+        font-size: 0.9rem;
+    }
+    
+    .testimonial-content {
+        padding: 20px;
+    }
+    
+    .testimonial-content p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .testimonial-author {
+        padding: 15px 20px;
+    }
+    
+    .author-info h4 {
+        font-size: 1rem;
+    }
+    
+    .author-info p {
+        font-size: 0.8rem;
+    }
+    
+    .faq-item {
+        padding: 20px;
+    }
+    
+    .faq-item h3 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+    
+    .faq-item p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
+
+/* iPhone 8 y dispositivos similares (375px) */
+@media (max-width: 375px) {
+    .about-hero {
+        min-height: 35vh;
+        padding: 20px 0;
+    }
+    
+    .about-hero h1 {
+        font-size: 1.6rem;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+    
+    .about-hero h2 {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .philosophy-section,
+    .schedule-section,
+    .services-section,
+    .facilities-section,
+    .tech-section,
+    .testimonials-extended,
+    .faq-section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+    
+    .mission-text {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+    
+    .value-item {
+        padding: 12px;
+    }
+    
+    .value-item i {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .value-item h3 {
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+    
+    .value-item p {
+        font-size: 0.8rem;
+    }
+    
+    .schedule-card {
+        padding: 15px;
+    }
+    
+    .card-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .card-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .schedule-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    
+    .schedule-card p {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .hours-list li,
+    .accessibility-list li {
+        font-size: 0.8rem;
+        margin-bottom: 8px;
+    }
+    
+    .service-card {
+        padding: 15px;
+    }
+    
+    .service-card i {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+    
+    .service-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    
+    .service-card p {
+        font-size: 0.8rem;
+    }
+    
+    .tech-list li {
+        margin-bottom: 25px;
+    }
+    
+    .tech-list li i {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+    
+    .tech-list li h3 {
+        font-size: 1.1rem;
+        margin-bottom: 6px;
+    }
+    
+    .tech-list li p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+    
+    .testimonial-content {
+        padding: 15px;
+    }
+    
+    .testimonial-content p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+    
+    .testimonial-author {
+        padding: 12px 15px;
+    }
+    
+    .author-img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .author-info h4 {
+        font-size: 0.9rem;
+    }
+    
+    .author-info p {
+        font-size: 0.7rem;
+    }
+    
+    .faq-item {
+        padding: 15px;
+    }
+    
+    .faq-item h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+    
+    .faq-item p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+}
+
+/* iPhone SE y dispositivos muy pequeños (320px) */
+@media (max-width: 320px) {
+    .about-hero h1 {
+        font-size: 1.4rem;
+    }
+    
+    .about-hero h2 {
+        font-size: 0.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    
+    .mission-text {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    
+    .value-item {
+        padding: 10px;
+    }
+    
+    .value-item i {
+        font-size: 1.5rem;
+    }
+    
+    .value-item h3 {
+        font-size: 0.9rem;
+    }
+    
+    .value-item p {
+        font-size: 0.7rem;
+    }
+    
+    .schedule-card {
+        padding: 12px;
+    }
+    
+    .card-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .card-icon i {
+        font-size: 1.3rem;
+    }
+    
+    .schedule-card h3 {
+        font-size: 1rem;
+    }
+    
+    .service-card {
+        padding: 12px;
+    }
+    
+    .service-card i {
+        font-size: 1.8rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1rem;
+    }
+    
+    .service-card p {
+        font-size: 0.7rem;
+    }
+    
+    .faq-item {
+        padding: 12px;
+    }
+    
+    .faq-item h3 {
+        font-size: 0.9rem;
+        padding-left: 18px;
+    }
+    
+    .faq-item p {
+        font-size: 0.7rem;
+    }
+}

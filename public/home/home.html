@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoMax Fitness - Tu camino hacia una vida más saludable</title>
+    <link rel="stylesheet" href="../home/home.css">
+    <link rel="stylesheet" href="../modal/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="../img/pesa.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../img/imglomax.png" alt="LoMax Fitness" class="logo-img">
+                <span>LoMax</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html" class="active">Inicio</a></li>
+                <li><a href="../rutinas/rutinas.html">Rutinas</a></li>
+                <li><a href="../guia-nutricional/guia-nutricional.html">Nutrición</a></li>
+                <li><a href="../membresia/membresia.html">Membresía</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                        <path d="m12 1 0 2m0 18 0 2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12l2 0m18 0 2 0M4.22 19.78l1.42-1.42m12.72-12.72 1.42-1.42" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+                <div class="user-profile" id="user-profile">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-dropdown" id="user-dropdown">
+                        <h4>Mi Cuenta</h4>
+                        <ul>
+                            <li><a href="../membresia/membresia.html"><i class="fas fa-credit-card"></i> Gestión de Pagos</a></li>
+                            <li><a href="../guia-nutricional/guia-nutricional.html"><i class="fas fa-calendar-check"></i>Guía Nutricional</a></li>
+                            <li><a href="../rutinas/rutinas.html"><i class="fas fa-history"></i>Rutinas de Progreso</a></li>
+                            <li><a href="../login/login.html"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content fade-in-up">
+                <h1 id="bienvenida">Bienvenido a LoMax</h1>
+                <p>Disfruta de una experiencia de entrenamiento personalizada y lleva tu rendimiento al siguiente nivel con rutinas profesionales y nutrición especializada.</p>
+                <a href="../rutinas/rutinas.html" class="cta-button">Comenzar Entrenamiento</a>
+            </div>
+            <div class="hero-image parallax-element">
+                <img src="../img/imglomax.png" alt="LoMax Fitness - Entrenamiento">
+            </div>
+        </section>
+
+        <!-- Resumen del Día Section -->
+        <section class="resumen-dia">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Tu Día en LoMax</h2>
+                <div class="resumen-layout">
+                    <div class="resumen-text fade-in-left">
+                        <div class="resumen-card" id="resumen-rutina">
+                            <div class="resumen-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <div class="resumen-content">
+                                <h3>Rutina de Hoy</h3>
+                                <p id="descripcion-rutina">Cargando...</p>
+                                <a href="../rutinas/rutinas.html" class="link-arrow">Ver Rutina →</a>
+                            </div>
+                        </div>
+                        
+                        <div class="resumen-card" id="resumen-nutricion">
+                            <div class="resumen-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="resumen-content">
+                                <h3>Plan Nutricional</h3>
+                                <p id="descripcion-nutricion">Cargando...</p>
+                                <a href="../guia-nutricional/guia-nutricional.html" class="link-arrow">Ver Plan →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resumen-visual fade-in-right">
+                        <div class="floating-card">
+                            <div class="stat">
+                                <h3 id="dias-activo">0</h3>
+                                <p>Días activo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Motivación Section -->
+        <section class="motivacion-consejos">
+            <div class="container">
+                <div class="motivacion-content scale-in">
+                    <div class="frase-motivacional">
+                        <h2>Motivación Diaria</h2>
+                        <h3 id="frase-dia">¡Cada día es una nueva oportunidad para ser mejor!</h3>
+                        <p>💪 Tu esfuerzo de hoy es el éxito de mañana</p>
+                    </div>
+                    <div class="consejos-section">
+                        <h4>💡 Tips del día:</h4>
+                        <div class="tips-grid">
+                            <div class="tip-item">
+                                <i class="fas fa-tint"></i>
+                                <span>Bebe 8 vasos de agua</span>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-bed"></i>
+                                <span>Duerme 7-8 horas</span>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Mantén una postura correcta</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="../img/imglomax.png" alt="LoMax Fitness">
+                        <span>LoMax</span>
+                    </div>
+                    <p>En LoMax Fitness nos dedicamos a transformar vidas a través del fitness, la nutrición y el bienestar integral.</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-section">
+                    <div class="footer-column">
+                        <h3>Enlaces Rápidos</h3>
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="../rutinas/rutinas.html">Rutinas</a></li>
+                            <li><a href="../guia-nutricional/guia-nutricional.html">Nutrición</a></li>
+                            <li><a href="../membresia/membresia.html">Membresía</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Servicios</h3>
+                        <ul>
+                            <li><a href="#">Entrenamiento Personal</a></li>
+                            <li><a href="#">Rutinas Personalizadas</a></li>
+                            <li><a href="#">Asesoría Nutricional</a></li>
+                            <li><a href="#">Seguimiento de Progreso</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column contact-info">
+                        <h3>Contáctanos</h3>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p><a href="mailto:info@lomaxfitness.com">info@lomaxfitness.com</a></p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <p>Lun - Dom: 24 horas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 LoMax Fitness. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../modal/modal.js"></script>
+    <script src="../home/home.js"></script>
+</body>
+</html>

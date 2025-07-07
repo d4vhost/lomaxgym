@@ -1,0 +1,1586 @@
+{
+  "rutinas": {
+    "Ganar masa muscular": {
+      "descripcion": "Rutina enfocada en hipertrofia muscular con ejercicios compuestos y aislados",
+      "frecuencia": "5 días por semana",
+      "dias": [
+        {
+          "dia": "Lunes",
+          "grupoMuscular": "Pecho y Tríceps",
+          "tipoEntrenamiento": "Hipertrofia",
+          "descripcion": "Día enfocado en desarrollo del pecho con trabajo complementario de tríceps",
+          "ejercicios": [
+            {
+              "nombre": "Press de banca con barra",
+              "series": 4,
+              "repeticiones": "8-12",
+              "descanso": "2-3 min",
+              "peso": "Moderado-Pesado",
+              "observaciones": "Mantener control en la bajada, pecho afuera"
+            },
+            {
+              "nombre": "Press inclinado con mancuernas",
+              "series": 3,
+              "repeticiones": "10-12",
+              "descanso": "90 seg",
+              "peso": "Moderado",
+              "observaciones": "Inclinación de 30-45 grados"
+            },
+            {
+              "nombre": "Aperturas con mancuernas",
+              "series": 3,
+              "repeticiones": "12-15",
+              "descanso": "60 seg",
+              "peso": "Ligero-Moderado",
+              "observaciones": "Sentir estiramiento en pecho, no bajar demasiado"
+            },
+            {
+              "nombre": "Fondos en paralelas",
+              "series": 3,
+              "repeticiones": "8-12",
+              "descanso": "90 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Si no puedes, usar asistencia o fondos en banco"
+            },
+            {
+              "nombre": "Press francés",
+              "series": 3,
+              "repeticiones": "10-12",
+              "descanso": "60 seg",
+              "peso": "Moderado",
+              "observaciones": "Mantener codos fijos, solo mover antebrazos"
+            }
+          ]
+        },
+        {
+          "dia": "Martes",
+          "grupoMuscular": "Espalda y Bíceps",
+          "tipoEntrenamiento": "Hipertrofia",
+          "descripcion": "Desarrollo de la musculatura dorsal con trabajo de bíceps",
+          "ejercicios": [
+            {
+              "nombre": "Dominadas asistidas",
+              "series": 4,
+              "repeticiones": "6-10",
+              "descanso": "2-3 min",
+              "peso": "Asistencia necesaria",
+              "observaciones": "Si no puedes, usar máquina de dominadas asistidas"
+            },
+            {
+              "nombre": "Remo con barra",
+              "series": 4,
+              "repeticiones": "8-12",
+              "descanso": "90 seg",
+              "peso": "Moderado",
+              "observaciones": "Mantener espalda recta, tirar hacia abdomen bajo"
+            },
+            {
+              "nombre": "Remo en polea baja",
+              "series": 3,
+              "repeticiones": "10-12",
+              "descanso": "60 seg",
+              "peso": "Moderado",
+              "observaciones": "Apretar omóplatos al final del movimiento"
+            },
+            {
+              "nombre": "Curl de bíceps con barra",
+              "series": 3,
+              "repeticiones": "10-12",
+              "descanso": "60 seg",
+              "peso": "Moderado",
+              "observaciones": "No balancear el cuerpo, movimiento controlado"
+            }
+          ]
+        },
+        {
+          "dia": "Miércoles",
+          "grupoMuscular": "Piernas",
+          "tipoEntrenamiento": "Fuerza e Hipertrofia",
+          "descripcion": "Entrenamiento completo de tren inferior",
+          "ejercicios": [
+            {
+              "nombre": "Sentadillas con barra",
+              "series": 4,
+              "repeticiones": "8-12",
+              "descanso": "3 min",
+              "peso": "Moderado-Pesado",
+              "observaciones": "Bajar hasta 90 grados, mantener espalda recta"
+            },
+            {
+              "nombre": "Peso muerto rumano",
+              "series": 4,
+              "repeticiones": "10-12",
+              "descanso": "2 min",
+              "peso": "Moderado",
+              "observaciones": "Sentir estiramiento en isquiotibiales"
+            },
+            {
+              "nombre": "Prensa de piernas",
+              "series": 3,
+              "repeticiones": "12-15",
+              "descanso": "90 seg",
+              "peso": "Moderado-Pesado",
+              "observaciones": "Descenso controlado, empuje explosivo"
+            },
+            {
+              "nombre": "Extensiones de cuádriceps",
+              "series": 3,
+              "repeticiones": "12-15",
+              "descanso": "60 seg",
+              "peso": "Moderado",
+              "observaciones": "Contracción en la parte superior"
+            }
+          ]
+        },
+        {
+          "dia": "Jueves",
+          "grupoMuscular": "Hombros y Core",
+          "tipoEntrenamiento": "Hipertrofia",
+          "descripcion": "Desarrollo de deltoides con fortalecimiento del core",
+          "ejercicios": [
+            {
+              "nombre": "Press militar con barra",
+              "series": 4,
+              "repeticiones": "8-12",
+              "descanso": "2 min",
+              "peso": "Moderado",
+              "observaciones": "Mantener core apretado, no arquear espalda"
+            },
+            {
+              "nombre": "Elevaciones laterales",
+              "series": 3,
+              "repeticiones": "12-15",
+              "descanso": "60 seg",
+              "peso": "Ligero-Moderado",
+              "observaciones": "Elevar hasta altura de hombros"
+            },
+            {
+              "nombre": "Elevaciones posteriores",
+              "series": 3,
+              "repeticiones": "12-15",
+              "descanso": "60 seg",
+              "peso": "Ligero",
+              "observaciones": "Mantener brazos ligeramente flexionados"
+            },
+            {
+              "nombre": "Plancha abdominal",
+              "series": 3,
+              "repeticiones": "30-60 seg",
+              "descanso": "60 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Mantener línea recta desde cabeza hasta pies"
+            }
+          ]
+        },
+        {
+          "dia": "Viernes",
+          "grupoMuscular": "Brazos y Cardio",
+          "tipoEntrenamiento": "Hipertrofia",
+          "descripcion": "Especialización en brazos con cardio ligero",
+          "ejercicios": [
+            {
+              "nombre": "Curl de bíceps con mancuernas",
+              "series": 4,
+              "repeticiones": "10-12",
+              "descanso": "60 seg",
+              "peso": "Moderado",
+              "observaciones": "Alternar brazos, movimiento controlado"
+            },
+            {
+              "nombre": "Extensiones de tríceps en polea",
+              "series": 4,
+              "repeticiones": "10-12",
+              "descanso": "60 seg",
+              "peso": "Moderado",
+              "observaciones": "Mantener codos pegados al cuerpo"
+            },
+            {
+              "nombre": "Curl martillo",
+              "series": 3,
+              "repeticiones": "12-15",
+              "descanso": "45 seg",
+              "peso": "Moderado",
+              "observaciones": "Puños en posición neutra"
+            },
+            {
+              "nombre": "Fondos en banco",
+              "series": 3,
+              "repeticiones": "10-15",
+              "descanso": "60 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Descender hasta 90 grados en codos"
+            },
+            {
+              "nombre": "Cardio ligero (caminadora)",
+              "series": 1,
+              "repeticiones": "15-20 min",
+              "descanso": "-",
+              "peso": "Intensidad baja",
+              "observaciones": "Mantener ritmo cardíaco moderado"
+            }
+          ]
+        }
+      ]
+    },
+    "Perder grasa": {
+      "descripcion": "Rutina con énfasis en quema de calorías y tonificación muscular",
+      "frecuencia": "5 días por semana",
+      "dias": [
+        {
+          "dia": "Lunes",
+          "grupoMuscular": "Cuerpo completo + Cardio",
+          "tipoEntrenamiento": "Circuito",
+          "descripcion": "Entrenamiento en circuito para maximizar quema de calorías",
+          "ejercicios": [
+            {
+              "nombre": "Burpees",
+              "series": 3,
+              "repeticiones": "10-15",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Mantener ritmo constante"
+            },
+            {
+              "nombre": "Sentadillas con salto",
+              "series": 3,
+              "repeticiones": "15-20",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Aterrizaje suave"
+            },
+            {
+              "nombre": "Flexiones de pecho",
+              "series": 3,
+              "repeticiones": "10-15",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Modificar en rodillas si es necesario"
+            },
+            {
+              "nombre": "Mountain climbers",
+              "series": 3,
+              "repeticiones": "20-30",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Alternar piernas rápidamente"
+            },
+            {
+              "nombre": "Cardio intenso (elíptica)",
+              "series": 1,
+              "repeticiones": "20-30 min",
+              "descanso": "-",
+              "peso": "Intensidad alta",
+              "observaciones": "Intervalos de alta y baja intensidad"
+            }
+          ]
+        },
+        {
+          "dia": "Martes",
+          "grupoMuscular": "Tren superior + Cardio",
+          "tipoEntrenamiento": "Resistencia",
+          "descripcion": "Fortalecimiento del tren superior con trabajo cardiovascular",
+          "ejercicios": [
+            {
+              "nombre": "Press de banca con mancuernas",
+              "series": 3,
+              "repeticiones": "12-15",
+              "descanso": "45 seg",
+              "peso": "Ligero-Moderado",
+              "observaciones": "Mayor número de repeticiones"
+            },
+            {
+              "nombre": "Remo en máquina",
+              "series": 3,
+              "repeticiones": "15-20",
+              "descanso": "45 seg",
+              "peso": "Ligero-Moderado",
+              "observaciones": "Movimiento controlado"
+            },
+            {
+              "nombre": "Press de hombros",
+              "series": 3,
+              "repeticiones": "12-15",
+              "descanso": "45 seg",
+              "peso": "Ligero",
+              "observaciones": "Mantener core activado"
+            },
+            {
+              "nombre": "Cardio moderado (bicicleta)",
+              "series": 1,
+              "repeticiones": "25-35 min",
+              "descanso": "-",
+              "peso": "Intensidad moderada",
+              "observaciones": "Mantener ritmo constante"
+            }
+          ]
+        },
+        {
+          "dia": "Miércoles",
+          "grupoMuscular": "Tren inferior + Core",
+          "tipoEntrenamiento": "Tonificación",
+          "descripcion": "Fortalecimiento de piernas con trabajo intenso de core",
+          "ejercicios": [
+            {
+              "nombre": "Sentadillas",
+              "series": 4,
+              "repeticiones": "15-20",
+              "descanso": "60 seg",
+              "peso": "Ligero-Moderado",
+              "observaciones": "Mayor rango de repeticiones"
+            },
+            {
+              "nombre": "Zancadas alternas",
+              "series": 3,
+              "repeticiones": "12-15 c/pierna",
+              "descanso": "45 seg",
+              "peso": "Peso corporal o mancuernas",
+              "observaciones": "Mantener equilibrio"
+            },
+            {
+              "nombre": "Elevaciones de talones",
+              "series": 3,
+              "repeticiones": "20-25",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Contracción completa en pantorrillas"
+            },
+            {
+              "nombre": "Abdominales bicicleta",
+              "series": 3,
+              "repeticiones": "20-30 c/lado",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Tocar codo con rodilla opuesta"
+            }
+          ]
+        },
+        {
+          "dia": "Jueves",
+          "grupoMuscular": "HIIT Total",
+          "tipoEntrenamiento": "Alta Intensidad",
+          "descripcion": "Entrenamiento de alta intensidad por intervalos",
+          "ejercicios": [
+            {
+              "nombre": "Jumping jacks",
+              "series": 4,
+              "repeticiones": "30 seg",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Máxima intensidad durante 30 seg"
+            },
+            {
+              "nombre": "Sentadillas con salto",
+              "series": 4,
+              "repeticiones": "30 seg",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Explosividad en cada salto"
+            },
+            {
+              "nombre": "Flexiones explosivas",
+              "series": 4,
+              "repeticiones": "30 seg",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Impulso hacia arriba"
+            },
+            {
+              "nombre": "High knees",
+              "series": 4,
+              "repeticiones": "30 seg",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Elevar rodillas al pecho"
+            }
+          ]
+        },
+        {
+          "dia": "Viernes",
+          "grupoMuscular": "Cardio + Estiramiento",
+          "tipoEntrenamiento": "Resistencia",
+          "descripcion": "Sesión de cardio prolongado con estiramiento final",
+          "ejercicios": [
+            {
+              "nombre": "Cardio variado",
+              "series": 1,
+              "repeticiones": "40-50 min",
+              "descanso": "-",
+              "peso": "Intensidad moderada",
+              "observaciones": "Combinar diferentes máquinas cada 10-15 min"
+            },
+            {
+              "nombre": "Estiramiento completo",
+              "series": 1,
+              "repeticiones": "15-20 min",
+              "descanso": "-",
+              "peso": "-",
+              "observaciones": "Estirar todos los grupos musculares"
+            }
+          ]
+        }
+      ]
+    },
+    "Tonificar": {
+      "descripcion": "Rutina para definir y tonificar músculos sin ganar mucho volumen",
+      "frecuencia": "5 días por semana",
+      "dias": [
+        {
+          "dia": "Lunes",
+          "grupoMuscular": "Tren superior",
+          "tipoEntrenamiento": "Tonificación",
+          "descripcion": "Trabajo de definición muscular del tren superior",
+          "ejercicios": [
+            {
+              "nombre": "Press de banca con mancuernas",
+              "series": 3,
+              "repeticiones": "15-20",
+              "descanso": "45 seg",
+              "peso": "Ligero-Moderado",
+              "observaciones": "Enfoque en la técnica y contracción"
+            },
+            {
+              "nombre": "Aperturas en máquina",
+              "series": 3,
+              "repeticiones": "15-18",
+              "descanso": "45 seg",
+              "peso": "Ligero",
+              "observaciones": "Sentir estiramiento y contracción"
+            },
+            {
+              "nombre": "Remo en polea alta",
+              "series": 3,
+              "repeticiones": "15-20",
+              "descanso": "45 seg",
+              "peso": "Ligero-Moderado",
+              "observaciones": "Apretar omóplatos"
+            },
+            {
+              "nombre": "Elevaciones laterales",
+              "series": 3,
+              "repeticiones": "15-20",
+              "descanso": "30 seg",
+              "peso": "Ligero",
+              "observaciones": "Movimiento controlado"
+            }
+          ]
+        },
+        {
+          "dia": "Martes",
+          "grupoMuscular": "Tren inferior + Glúteos",
+          "tipoEntrenamiento": "Tonificación",
+          "descripcion": "Definición y fortalecimiento de piernas y glúteos",
+          "ejercicios": [
+            {
+              "nombre": "Sentadillas sumo",
+              "series": 4,
+              "repeticiones": "15-20",
+              "descanso": "60 seg",
+              "peso": "Ligero-Moderado",
+              "observaciones": "Pies más separados, activar glúteos"
+            },
+            {
+              "nombre": "Zancadas laterales",
+              "series": 3,
+              "repeticiones": "12-15 c/lado",
+              "descanso": "45 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Trabajar músculos estabilizadores"
+            },
+            {
+              "nombre": "Puente de glúteos",
+              "series": 3,
+              "repeticiones": "20-25",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Contracción máxima en glúteos"
+            },
+            {
+              "nombre": "Elevaciones de pantorrillas",
+              "series": 3,
+              "repeticiones": "20-30",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Rango completo de movimiento"
+            }
+          ]
+        },
+        {
+          "dia": "Miércoles",
+          "grupoMuscular": "Core y Estabilidad",
+          "tipoEntrenamiento": "Funcional",
+          "descripcion": "Fortalecimiento del core y mejora de la estabilidad",
+          "ejercicios": [
+            {
+              "nombre": "Plancha frontal",
+              "series": 3,
+              "repeticiones": "45-60 seg",
+              "descanso": "60 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Mantener línea recta"
+            },
+            {
+              "nombre": "Plancha lateral",
+              "series": 3,
+              "repeticiones": "30-45 seg c/lado",
+              "descanso": "45 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Activar músculos laterales"
+            },
+            {
+              "nombre": "Abdominales crunch",
+              "series": 3,
+              "repeticiones": "20-25",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Contraer abdomen sin tirar del cuello"
+            },
+            {
+              "nombre": "Russian twists",
+              "series": 3,
+              "repeticiones": "20-30",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Rotar el torso completamente"
+            }
+          ]
+        },
+        {
+          "dia": "Jueves",
+          "grupoMuscular": "Cuerpo completo",
+          "tipoEntrenamiento": "Circuito",
+          "descripcion": "Trabajo integral de todo el cuerpo",
+          "ejercicios": [
+            {
+              "nombre": "Squat to press",
+              "series": 3,
+              "repeticiones": "12-15",
+              "descanso": "45 seg",
+              "peso": "Mancuernas ligeras",
+              "observaciones": "Combinar sentadilla con press de hombros"
+            },
+            {
+              "nombre": "Remo inclinado",
+              "series": 3,
+              "repeticiones": "15-18",
+              "descanso": "45 seg",
+              "peso": "Mancuernas ligeras",
+              "observaciones": "Mantener espalda recta"
+            },
+            {
+              "nombre": "Zancadas con giro",
+              "series": 3,
+              "repeticiones": "10-12 c/lado",
+              "descanso": "45 seg",
+              "peso": "Mancuerna",
+              "observaciones": "Girar el torso hacia la pierna adelantada"
+            },
+            {
+              "nombre": "Deadbug",
+              "series": 3,
+              "repeticiones": "10-12 c/lado",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Mantener espalda pegada al suelo"
+            }
+          ]
+        },
+        {
+          "dia": "Viernes",
+          "grupoMuscular": "Cardio suave + Flexibilidad",
+          "tipoEntrenamiento": "Recuperación activa",
+          "descripcion": "Sesión de recuperación con cardio ligero y estiramientos",
+          "ejercicios": [
+            {
+              "nombre": "Caminata en cinta",
+              "series": 1,
+              "repeticiones": "20-30 min",
+              "descanso": "-",
+              "peso": "Intensidad baja",
+              "observaciones": "Ritmo conversacional"
+            },
+            {
+              "nombre": "Yoga flow básico",
+              "series": 1,
+              "repeticiones": "15-20 min",
+              "descanso": "-",
+              "peso": "-",
+              "observaciones": "Posturas de estiramiento y relajación"
+            }
+          ]
+        }
+      ]
+    },
+    "Aumentar energía": {
+      "descripcion": "Rutina funcional para mejorar la energía y vitalidad diaria",
+      "frecuencia": "5 días por semana",
+      "dias": [
+        {
+          "dia": "Lunes",
+          "grupoMuscular": "Movimiento funcional",
+          "tipoEntrenamiento": "Funcional",
+          "descripcion": "Ejercicios que mejoran la funcionalidad en actividades diarias",
+          "ejercicios": [
+            {
+              "nombre": "Sentadillas funcionales",
+              "series": 3,
+              "repeticiones": "12-15",
+              "descanso": "60 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Simular levantarse de una silla"
+            },
+            {
+              "nombre": "Flexiones modificadas",
+              "series": 3,
+              "repeticiones": "8-12",
+              "descanso": "60 seg",
+              "peso": "Peso corporal",
+              "observaciones": "En rodillas si es necesario"
+            },
+            {
+              "nombre": "Caminata activa",
+              "series": 1,
+              "repeticiones": "15-20 min",
+              "descanso": "-",
+              "peso": "-",
+              "observaciones": "Ritmo moderado, respiración profunda"
+            }
+          ]
+        },
+        {
+          "dia": "Martes",
+          "grupoMuscular": "Cardio ligero + Fuerza",
+          "tipoEntrenamiento": "Resistencia",
+          "descripcion": "Combinación de ejercicio cardiovascular con fortalecimiento",
+          "ejercicios": [
+            {
+              "nombre": "Bicicleta estática",
+              "series": 1,
+              "repeticiones": "20-25 min",
+              "descanso": "-",
+              "peso": "Intensidad baja-moderada",
+              "observaciones": "Mantener ritmo constante"
+            },
+            {
+              "nombre": "Ejercicios con bandas elásticas",
+              "series": 3,
+              "repeticiones": "15-20",
+              "descanso": "45 seg",
+              "peso": "Banda ligera",
+              "observaciones": "Variedad de movimientos para todo el cuerpo"
+            }
+          ]
+        },
+        {
+          "dia": "Miércoles",
+          "grupoMuscular": "Estabilidad y Balance",
+          "tipoEntrenamiento": "Equilibrio",
+          "descripcion": "Ejercicios para mejorar la estabilidad y coordinación",
+          "ejercicios": [
+            {
+              "nombre": "Equilibrio en una pierna",
+              "series": 3,
+              "repeticiones": "30 seg c/pierna",
+              "descanso": "30 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Mantener postura estable"
+            },
+            {
+              "nombre": "Ejercicios de coordinación",
+              "series": 3,
+              "repeticiones": "10-15",
+              "descanso": "45 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Movimientos cruzados brazo-pierna"
+            },
+            {
+              "nombre": "Tai Chi básico",
+              "series": 1,
+              "repeticiones": "10-15 min",
+              "descanso": "-",
+              "peso": "-",
+              "observaciones": "Movimientos lentos y controlados"
+            }
+          ]
+        },
+        {
+          "dia": "Jueves",
+          "grupoMuscular": "Movilidad articular",
+          "tipoEntrenamiento": "Movilidad",
+          "descripcion": "Ejercicios para mantener y mejorar la movilidad articular",
+          "ejercicios": [
+            {
+              "nombre": "Rotaciones articulares",
+              "series": 2,
+              "repeticiones": "10-15 c/articulación",
+              "descanso": "30 seg",
+              "peso": "-",
+              "observaciones": "Hombros, caderas, rodillas, tobillos"
+            },
+            {
+              "nombre": "Estiramientos dinámicos",
+              "series": 2,
+              "repeticiones": "10-12 c/movimiento",
+              "descanso": "30 seg",
+              "peso": "-",
+              "observaciones": "Preparar el cuerpo para el movimiento"
+            },
+            {
+              "nombre": "Caminata meditativa",
+              "series": 1,
+              "repeticiones": "15-20 min",
+              "descanso": "-",
+              "peso": "-",
+              "observaciones": "Enfoque en la respiración y pasos"
+            }
+          ]
+        },
+        {
+          "dia": "Viernes",
+          "grupoMuscular": "Recuperación activa",
+          "tipoEntrenamiento": "Relajación",
+          "descripcion": "Sesión de recuperación para terminar la semana",
+          "ejercicios": [
+            {
+              "nombre": "Estiramientos estáticos",
+              "series": 1,
+              "repeticiones": "20-30 min",
+              "descanso": "-",
+              "peso": "-",
+              "observaciones": "Mantener cada estiramiento 30-60 seg"
+            },
+            {
+              "nombre": "Ejercicios de respiración",
+              "series": 3,
+              "repeticiones": "5-10 respiraciones",
+              "descanso": "60 seg",
+              "peso": "-",
+              "observaciones": "Respiración diafragmática profunda"
+            }
+          ]
+        }
+      ]
+    },
+    "Mejorar resistencia": {
+      "descripcion": "Rutina enfocada en el desarrollo de la resistencia cardiovascular y muscular",
+      "frecuencia": "5 días por semana",
+      "dias": [
+        {
+          "dia": "Lunes",
+          "grupoMuscular": "Cardio base + Fuerza",
+          "tipoEntrenamiento": "Resistencia",
+          "descripcion": "Construcción de base cardiovascular con trabajo de fuerza",
+          "ejercicios": [
+            {
+              "nombre": "Trote ligero",
+              "series": 1,
+              "repeticiones": "25-35 min",
+              "descanso": "-",
+              "peso": "Intensidad moderada",
+              "observaciones": "Mantener ritmo conversacional"
+            },
+            {
+              "nombre": "Circuito de fuerza",
+              "series": 3,
+              "repeticiones": "12-15 c/ejercicio",
+              "descanso": "30 seg entre ejercicios",
+              "peso": "Ligero-Moderado",
+              "observaciones": "Sentadillas, flexiones, remo, press"
+            }
+          ]
+        },
+        {
+          "dia": "Martes",
+          "grupoMuscular": "Intervalos cardiovasculares",
+          "tipoEntrenamiento": "Intervalos",
+          "descripcion": "Entrenamiento por intervalos para mejorar resistencia",
+          "ejercicios": [
+            {
+              "nombre": "Intervalos en cinta",
+              "series": 8,
+              "repeticiones": "2 min intenso / 1 min recuperación",
+              "descanso": "1 min",
+              "peso": "Intensidad alta/baja",
+              "observaciones": "Alternar entre intensidad alta y recuperación"
+            },
+            {
+              "nombre": "Ejercicios de core",
+              "series": 3,
+              "repeticiones": "45 seg",
+              "descanso": "15 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Plancha, bicicleta, mountain climbers"
+            }
+          ]
+        },
+        {
+          "dia": "Miércoles",
+          "grupoMuscular": "Resistencia muscular",
+          "tipoEntrenamiento": "Resistencia",
+          "descripcion": "Trabajo de resistencia muscular con altas repeticiones",
+          "ejercicios": [
+            {
+              "nombre": "Sentadillas de resistencia",
+              "series": 4,
+              "repeticiones": "20-25",
+              "descanso": "45 seg",
+              "peso": "Ligero",
+              "observaciones": "Mantener técnica perfecta"
+            },
+            {
+              "nombre": "Flexiones de resistencia",
+              "series": 4,
+              "repeticiones": "15-25",
+              "descanso": "45 seg",
+              "peso": "Peso corporal",
+              "observaciones": "Modificar si es necesario"
+            },
+            {
+              "nombre": "Remo de resistencia",
+              "series": 4,
+              "repeticiones": "20-25",
+              "descanso": "45 seg",
+              "peso": "Ligero",
+              "observaciones": "Enfoque en la resistencia muscular"
+            }
+          ]
+        },
+        {
+          "dia": "Jueves",
+          "grupoMuscular": "Cardio cruzado",
+          "tipoEntrenamiento": "Variado",
+          "descripcion": "Entrenamiento cardiovascular variado",
+          "ejercicios": [
+            {
+              "nombre": "Elíptica",
+              "series": 1,
+              "repeticiones": "20 min",
+              "descanso": "-",
+              "peso": "Intensidad moderada-alta",
+              "observaciones": "Cambiar resistencia cada 5 min"
+            },
+            {
+              "nombre": "Remo en máquina",
+              "series": 1,
+              "repeticiones": "15 min",
+              "descanso": "-",
+              "peso": "Intensidad moderada",
+              "observaciones": "Mantener técnica correcta"
+            },
+            {
+              "nombre": "Escaladora",
+              "series": 1,
+              "repeticiones": "10 min",
+              "descanso": "-",
+              "peso": "Intensidad moderada",
+              "observaciones": "Ritmo constante"
+            }
+          ]
+        },
+        {
+          "dia": "Viernes",
+          "grupoMuscular": "Resistencia larga",
+          "tipoEntrenamiento": "Aeróbico",
+          "descripcion": "Sesión larga de resistencia aeróbica",
+          "ejercicios": [
+            {
+              "nombre": "Cardio prolongado",
+              "series": 1,
+              "repeticiones": "45-60 min",
+              "descanso": "-",
+              "peso": "Intensidad baja-moderada",
+              "observaciones": "Alternar entre diferentes máquinas cada 15 min"
+            },
+            {
+              "nombre": "Estiramiento de recuperación",
+              "series": 1,
+              "repeticiones": "15 min",
+              "descanso": "-",
+              "peso": "-",
+              "observaciones": "Enfoque en músculos trabajados"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "Perder grasa": {
+    "descripcion": "Rutina con énfasis en quema de calorías y tonificación muscular",
+    "frecuencia": "5 días por semana",
+    "dias": [
+      {
+        "dia": "Lunes",
+        "grupoMuscular": "Cuerpo completo + Cardio",
+        "tipoEntrenamiento": "Circuito",
+        "descripcion": "Entrenamiento en circuito para maximizar quema de calorías",
+        "ejercicios": [
+          {
+            "nombre": "Burpees",
+            "series": 3,
+            "repeticiones": "10-15",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Mantener ritmo constante"
+          },
+          {
+            "nombre": "Sentadillas con salto",
+            "series": 3,
+            "repeticiones": "15-20",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Aterrizaje suave"
+          },
+          {
+            "nombre": "Flexiones de pecho",
+            "series": 3,
+            "repeticiones": "10-15",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Modificar en rodillas si es necesario"
+          },
+          {
+            "nombre": "Mountain climbers",
+            "series": 3,
+            "repeticiones": "20-30",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Alternar piernas rápidamente"
+          },
+          {
+            "nombre": "Cardio intenso (elíptica)",
+            "series": 1,
+            "repeticiones": "20-30 min",
+            "descanso": "-",
+            "peso": "Intensidad alta",
+            "observaciones": "Intervalos de alta y baja intensidad"
+          }
+        ]
+      },
+      {
+        "dia": "Martes",
+        "grupoMuscular": "Tren superior + Cardio",
+        "tipoEntrenamiento": "Resistencia",
+        "descripcion": "Fortalecimiento del tren superior con trabajo cardiovascular",
+        "ejercicios": [
+          {
+            "nombre": "Press de banca con mancuernas",
+            "series": 3,
+            "repeticiones": "12-15",
+            "descanso": "45 seg",
+            "peso": "Ligero-Moderado",
+            "observaciones": "Mayor número de repeticiones"
+          },
+          {
+            "nombre": "Remo en máquina",
+            "series": 3,
+            "repeticiones": "15-20",
+            "descanso": "45 seg",
+            "peso": "Ligero-Moderado",
+            "observaciones": "Movimiento controlado"
+          },
+          {
+            "nombre": "Press de hombros",
+            "series": 3,
+            "repeticiones": "12-15",
+            "descanso": "45 seg",
+            "peso": "Ligero",
+            "observaciones": "Mantener core activado"
+          },
+          {
+            "nombre": "Cardio moderado (bicicleta)",
+            "series": 1,
+            "repeticiones": "25-35 min",
+            "descanso": "-",
+            "peso": "Intensidad moderada",
+            "observaciones": "Mantener ritmo constante"
+          }
+        ]
+      },
+      {
+        "dia": "Miércoles",
+        "grupoMuscular": "Tren inferior + Core",
+        "tipoEntrenamiento": "Tonificación",
+        "descripcion": "Fortalecimiento de piernas con trabajo intenso de core",
+        "ejercicios": [
+          {
+            "nombre": "Sentadillas",
+            "series": 4,
+            "repeticiones": "15-20",
+            "descanso": "60 seg",
+            "peso": "Ligero-Moderado",
+            "observaciones": "Mayor rango de repeticiones"
+          },
+          {
+            "nombre": "Zancadas alternas",
+            "series": 3,
+            "repeticiones": "12-15 c/pierna",
+            "descanso": "45 seg",
+            "peso": "Peso corporal o mancuernas",
+            "observaciones": "Mantener equilibrio"
+          },
+          {
+            "nombre": "Elevaciones de talones",
+            "series": 3,
+            "repeticiones": "20-25",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Contracción completa en pantorrillas"
+          },
+          {
+            "nombre": "Abdominales bicicleta",
+            "series": 3,
+            "repeticiones": "20-30 c/lado",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Tocar codo con rodilla opuesta"
+          }
+        ]
+      },
+      {
+        "dia": "Jueves",
+        "grupoMuscular": "HIIT Total",
+        "tipoEntrenamiento": "Alta Intensidad",
+        "descripcion": "Entrenamiento de alta intensidad por intervalos",
+        "ejercicios": [
+          {
+            "nombre": "Jumping jacks",
+            "series": 4,
+            "repeticiones": "30 seg",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Máxima intensidad durante 30 seg"
+          },
+          {
+            "nombre": "Sentadillas con salto",
+            "series": 4,
+            "repeticiones": "30 seg",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Explosividad en cada salto"
+          },
+          {
+            "nombre": "Flexiones explosivas",
+            "series": 4,
+            "repeticiones": "30 seg",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Impulso hacia arriba"
+          },
+          {
+            "nombre": "High knees",
+            "series": 4,
+            "repeticiones": "30 seg",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Elevar rodillas al pecho"
+          }
+        ]
+      },
+      {
+        "dia": "Viernes",
+        "grupoMuscular": "Cardio + Estiramiento",
+        "tipoEntrenamiento": "Resistencia",
+        "descripcion": "Sesión de cardio prolongado con estiramiento final",
+        "ejercicios": [
+          {
+            "nombre": "Cardio variado",
+            "series": 1,
+            "repeticiones": "40-50 min",
+            "descanso": "-",
+            "peso": "Intensidad moderada",
+            "observaciones": "Combinar diferentes máquinas cada 10-15 min"
+          },
+          {
+            "nombre": "Estiramiento completo",
+            "series": 1,
+            "repeticiones": "15-20 min",
+            "descanso": "-",
+            "peso": "-",
+            "observaciones": "Estirar todos los grupos musculares"
+          }
+        ]
+      }
+    ]
+  },
+  "Tonificar": {
+    "descripcion": "Rutina para definir y tonificar músculos sin ganar mucho volumen",
+    "frecuencia": "5 días por semana",
+    "dias": [
+      {
+        "dia": "Lunes",
+        "grupoMuscular": "Tren superior",
+        "tipoEntrenamiento": "Tonificación",
+        "descripcion": "Trabajo de definición muscular del tren superior",
+        "ejercicios": [
+          {
+            "nombre": "Press de banca con mancuernas",
+            "series": 3,
+            "repeticiones": "15-20",
+            "descanso": "45 seg",
+            "peso": "Ligero-Moderado",
+            "observaciones": "Enfoque en la técnica y contracción"
+          },
+          {
+            "nombre": "Aperturas en máquina",
+            "series": 3,
+            "repeticiones": "15-18",
+            "descanso": "45 seg",
+            "peso": "Ligero",
+            "observaciones": "Sentir estiramiento y contracción"
+          },
+          {
+            "nombre": "Remo en polea alta",
+            "series": 3,
+            "repeticiones": "15-20",
+            "descanso": "45 seg",
+            "peso": "Ligero-Moderado",
+            "observaciones": "Apretar omóplatos"
+          },
+          {
+            "nombre": "Elevaciones laterales",
+            "series": 3,
+            "repeticiones": "15-20",
+            "descanso": "30 seg",
+            "peso": "Ligero",
+            "observaciones": "Movimiento controlado"
+          }
+        ]
+      },
+      {
+        "dia": "Martes",
+        "grupoMuscular": "Tren inferior + Glúteos",
+        "tipoEntrenamiento": "Tonificación",
+        "descripcion": "Definición y fortalecimiento de piernas y glúteos",
+        "ejercicios": [
+          {
+            "nombre": "Sentadillas sumo",
+            "series": 4,
+            "repeticiones": "15-20",
+            "descanso": "60 seg",
+            "peso": "Ligero-Moderado",
+            "observaciones": "Pies más separados, activar glúteos"
+          },
+          {
+            "nombre": "Zancadas laterales",
+            "series": 3,
+            "repeticiones": "12-15 c/lado",
+            "descanso": "45 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Trabajar músculos estabilizadores"
+          },
+          {
+            "nombre": "Puente de glúteos",
+            "series": 3,
+            "repeticiones": "20-25",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Contracción máxima en glúteos"
+          },
+          {
+            "nombre": "Elevaciones de pantorrillas",
+            "series": 3,
+            "repeticiones": "20-30",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Rango completo de movimiento"
+          }
+        ]
+      },
+      {
+        "dia": "Miércoles",
+        "grupoMuscular": "Core y Estabilidad",
+        "tipoEntrenamiento": "Funcional",
+        "descripcion": "Fortalecimiento del core y mejora de la estabilidad",
+        "ejercicios": [
+          {
+            "nombre": "Plancha frontal",
+            "series": 3,
+            "repeticiones": "45-60 seg",
+            "descanso": "60 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Mantener línea recta"
+          },
+          {
+            "nombre": "Plancha lateral",
+            "series": 3,
+            "repeticiones": "30-45 seg c/lado",
+            "descanso": "45 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Activar músculos laterales"
+          },
+          {
+            "nombre": "Abdominales crunch",
+            "series": 3,
+            "repeticiones": "20-25",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Contraer abdomen sin tirar del cuello"
+          },
+          {
+            "nombre": "Russian twists",
+            "series": 3,
+            "repeticiones": "20-30",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Rotar el torso completamente"
+          }
+        ]
+      },
+      {
+        "dia": "Jueves",
+        "grupoMuscular": "Cuerpo completo",
+        "tipoEntrenamiento": "Circuito",
+        "descripcion": "Trabajo integral de todo el cuerpo",
+        "ejercicios": [
+          {
+            "nombre": "Squat to press",
+            "series": 3,
+            "repeticiones": "12-15",
+            "descanso": "45 seg",
+            "peso": "Mancuernas ligeras",
+            "observaciones": "Combinar sentadilla con press de hombros"
+          },
+          {
+            "nombre": "Remo inclinado",
+            "series": 3,
+            "repeticiones": "15-18",
+            "descanso": "45 seg",
+            "peso": "Mancuernas ligeras",
+            "observaciones": "Mantener espalda recta"
+          },
+          {
+            "nombre": "Zancadas con giro",
+            "series": 3,
+            "repeticiones": "10-12 c/lado",
+            "descanso": "45 seg",
+            "peso": "Mancuerna",
+            "observaciones": "Girar el torso hacia la pierna adelantada"
+          },
+          {
+            "nombre": "Deadbug",
+            "series": 3,
+            "repeticiones": "10-12 c/lado",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Mantener espalda pegada al suelo"
+          }
+        ]
+      },
+      {
+        "dia": "Viernes",
+        "grupoMuscular": "Cardio suave + Flexibilidad",
+        "tipoEntrenamiento": "Recuperación activa",
+        "descripcion": "Sesión de recuperación con cardio ligero y estiramientos",
+        "ejercicios": [
+          {
+            "nombre": "Caminata en cinta",
+            "series": 1,
+            "repeticiones": "20-30 min",
+            "descanso": "-",
+            "peso": "Intensidad baja",
+            "observaciones": "Ritmo conversacional"
+          },
+          {
+            "nombre": "Yoga flow básico",
+            "series": 1,
+            "repeticiones": "15-20 min",
+            "descanso": "-",
+            "peso": "-",
+            "observaciones": "Posturas de estiramiento y relajación"
+          }
+        ]
+      }
+    ]
+  },
+  "Aumentar energía": {
+    "descripcion": "Rutina funcional para mejorar la energía y vitalidad diaria",
+    "frecuencia": "5 días por semana",
+    "dias": [
+      {
+        "dia": "Lunes",
+        "grupoMuscular": "Movimiento funcional",
+        "tipoEntrenamiento": "Funcional",
+        "descripcion": "Ejercicios que mejoran la funcionalidad en actividades diarias",
+        "ejercicios": [
+          {
+            "nombre": "Sentadillas funcionales",
+            "series": 3,
+            "repeticiones": "12-15",
+            "descanso": "60 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Simular levantarse de una silla"
+          },
+          {
+            "nombre": "Flexiones modificadas",
+            "series": 3,
+            "repeticiones": "8-12",
+            "descanso": "60 seg",
+            "peso": "Peso corporal",
+            "observaciones": "En rodillas si es necesario"
+          },
+          {
+            "nombre": "Caminata activa",
+            "series": 1,
+            "repeticiones": "15-20 min",
+            "descanso": "-",
+            "peso": "-",
+            "observaciones": "Ritmo moderado, respiración profunda"
+          }
+        ]
+      },
+      {
+        "dia": "Martes",
+        "grupoMuscular": "Cardio ligero + Fuerza",
+        "tipoEntrenamiento": "Resistencia",
+        "descripcion": "Combinación de ejercicio cardiovascular con fortalecimiento",
+        "ejercicios": [
+          {
+            "nombre": "Bicicleta estática",
+            "series": 1,
+            "repeticiones": "20-25 min",
+            "descanso": "-",
+            "peso": "Intensidad baja-moderada",
+            "observaciones": "Mantener ritmo constante"
+          },
+          {
+            "nombre": "Ejercicios con bandas elásticas",
+            "series": 3,
+            "repeticiones": "15-20",
+            "descanso": "45 seg",
+            "peso": "Banda ligera",
+            "observaciones": "Variedad de movimientos para todo el cuerpo"
+          }
+        ]
+      },
+      {
+        "dia": "Miércoles",
+        "grupoMuscular": "Estabilidad y Balance",
+        "tipoEntrenamiento": "Equilibrio",
+        "descripcion": "Ejercicios para mejorar la estabilidad y coordinación",
+        "ejercicios": [
+          {
+            "nombre": "Equilibrio en una pierna",
+            "series": 3,
+            "repeticiones": "30 seg c/pierna",
+            "descanso": "30 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Mantener postura estable"
+          },
+          {
+            "nombre": "Ejercicios de coordinación",
+            "series": 3,
+            "repeticiones": "10-15",
+            "descanso": "45 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Movimientos cruzados brazo-pierna"
+          },
+          {
+            "nombre": "Tai Chi básico",
+            "series": 1,
+            "repeticiones": "10-15 min",
+            "descanso": "-",
+            "peso": "-",
+            "observaciones": "Movimientos lentos y controlados"
+          }
+        ]
+      },
+      {
+        "dia": "Jueves",
+        "grupoMuscular": "Movilidad articular",
+        "tipoEntrenamiento": "Movilidad",
+        "descripcion": "Ejercicios para mantener y mejorar la movilidad articular",
+        "ejercicios": [
+          {
+            "nombre": "Rotaciones articulares",
+            "series": 2,
+            "repeticiones": "10-15 c/articulación",
+            "descanso": "30 seg",
+            "peso": "-",
+            "observaciones": "Hombros, caderas, rodillas, tobillos"
+          },
+          {
+            "nombre": "Estiramientos dinámicos",
+            "series": 2,
+            "repeticiones": "10-12 c/movimiento",
+            "descanso": "30 seg",
+            "peso": "-",
+            "observaciones": "Preparar el cuerpo para el movimiento"
+          },
+          {
+            "nombre": "Caminata meditativa",
+            "series": 1,
+            "repeticiones": "15-20 min",
+            "descanso": "-",
+            "peso": "-",
+            "observaciones": "Enfoque en la respiración y pasos"
+          }
+        ]
+      },
+      {
+        "dia": "Viernes",
+        "grupoMuscular": "Recuperación activa",
+        "tipoEntrenamiento": "Relajación",
+        "descripcion": "Sesión de recuperación para terminar la semana",
+        "ejercicios": [
+          {
+            "nombre": "Estiramientos estáticos",
+            "series": 1,
+            "repeticiones": "20-30 min",
+            "descanso": "-",
+            "peso": "-",
+            "observaciones": "Mantener cada estiramiento 30-60 seg"
+          },
+          {
+            "nombre": "Ejercicios de respiración",
+            "series": 3,
+            "repeticiones": "5-10 respiraciones",
+            "descanso": "60 seg",
+            "peso": "-",
+            "observaciones": "Respiración diafragmática profunda"
+          }
+        ]
+      }
+    ]
+  },
+  "Mejorar resistencia": {
+    "descripcion": "Rutina enfocada en el desarrollo de la resistencia cardiovascular y muscular",
+    "frecuencia": "5 días por semana",
+    "dias": [
+      {
+        "dia": "Lunes",
+        "grupoMuscular": "Cardio base + Fuerza",
+        "tipoEntrenamiento": "Resistencia",
+        "descripcion": "Construcción de base cardiovascular con trabajo de fuerza",
+        "ejercicios": [
+          {
+            "nombre": "Trote ligero",
+            "series": 1,
+            "repeticiones": "25-35 min",
+            "descanso": "-",
+            "peso": "Intensidad moderada",
+            "observaciones": "Mantener ritmo conversacional"
+          },
+          {
+            "nombre": "Circuito de fuerza",
+            "series": 3,
+            "repeticiones": "12-15 c/ejercicio",
+            "descanso": "30 seg entre ejercicios",
+            "peso": "Ligero-Moderado",
+            "observaciones": "Sentadillas, flexiones, remo, press"
+          }
+        ]
+      },
+      {
+        "dia": "Martes",
+        "grupoMuscular": "Intervalos cardiovasculares",
+        "tipoEntrenamiento": "Intervalos",
+        "descripción": "Entrenamiento por intervalos para mejorar resistencia",
+        "ejercicios": [
+          {
+            "nombre": "Intervalos en cinta",
+            "series": 8,
+            "repeticiones": "2 min intenso / 1 min recuperación",
+            "descanso": "1 min",
+            "peso": "Intensidad alta/baja",
+            "observaciones": "Alternar entre intensidad alta y recuperación"
+          },
+          {
+            "nombre": "Ejercicios de core",
+            "series": 3,
+            "repeticiones": "45 seg",
+            "descanso": "15 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Plancha, bicicleta, mountain climbers"
+          }
+        ]
+      },
+      {
+        "dia": "Miércoles",
+        "grupoMuscular": "Resistencia muscular",
+        "tipoEntrenamiento": "Resistencia",
+        "descripcion": "Trabajo de resistencia muscular con altas repeticiones",
+        "ejercicios": [
+          {
+            "nombre": "Sentadillas de resistencia",
+            "series": 4,
+            "repeticiones": "20-25",
+            "descanso": "45 seg",
+            "peso": "Ligero",
+            "observaciones": "Mantener técnica perfecta"
+          },
+          {
+            "nombre": "Flexiones de resistencia",
+            "series": 4,
+            "repeticiones": "15-25",
+            "descanso": "45 seg",
+            "peso": "Peso corporal",
+            "observaciones": "Modificar si es necesario"
+          },
+          {
+            "nombre": "Remo de resistencia",
+            "series": 4,
+            "repeticiones": "20-25",
+            "descanso": "45 seg",
+            "peso": "Ligero",
+            "observaciones": "Enfoque en la resistencia muscular"
+          }
+        ]
+      },
+      {
+        "dia": "Jueves",
+        "grupoMuscular": "Cardio cruzado",
+        "tipoEntrenamiento": "Variado",
+        "descripcion": "Entrenamiento cardiovascular variado",
+        "ejercicios": [
+          {
+            "nombre": "Elíptica",
+            "series": 1,
+            "repeticiones": "20 min",
+            "descanso": "-",
+            "peso": "Intensidad moderada-alta",
+            "observaciones": "Cambiar resistencia cada 5 min"
+          },
+          {
+            "nombre": "Remo en máquina",
+            "series": 1,
+            "repeticiones": "15 min",
+            "descanso": "-",
+            "peso": "Intensidad moderada",
+            "observaciones": "Mantener técnica correcta"
+          },
+          {
+            "nombre": "Escaladora",
+            "series": 1,
+            "repeticiones": "10 min",
+            "descanso": "-",
+            "peso": "Intensidad moderada",
+            "observaciones": "Ritmo constante"
+          }
+        ]
+      },
+      {
+        "dia": "Viernes",
+        "grupoMuscular": "Resistencia larga",
+        "tipoEntrenamiento": "Aeróbico",
+        "descripcion": "Sesión larga de resistencia aeróbica",
+        "ejercicios": [
+          {
+            "nombre": "Cardio prolongado",
+            "series": 1,
+            "repeticiones": "45-60 min",
+            "descanso": "-",
+            "peso": "Intensidad baja-moderada",
+            "observaciones": "Alternar entre diferentes máquinas cada 15 min"
+          },
+          {
+            "nombre": "Estiramiento de recuperación",
+            "series": 1,
+            "repeticiones": "15 min",
+            "descanso": "-",
+            "peso": "-",
+            "observaciones": "Enfoque en músculos trabajados"
+          }
+        ]
+      }
+    ]
+  }
+}

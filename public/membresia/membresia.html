@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión de Membresías - LoMax Fitness</title>
+  <link rel="stylesheet" href="../home/home.css" />
+  <link rel="stylesheet" href="membresia.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="icon" href="../img/pesa.png" type="image/x-icon" />
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="../img/imglomax.png" alt="LoMax Fitness" class="logo-img">
+        <span>LoMax</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../home/home.html">Inicio</a></li>
+        <li><a href="../rutinas/rutinas.html">Rutinas</a></li>
+        <li><a href="../guia-nutricional/guia-nutricional.html">Nutrición</a></li>
+        <li><a href="membresia.html" class="active">Membresía</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+            <path d="m12 1 0 2m0 18 0 2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12l2 0m18 0 2 0M4.22 19.78l1.42-1.42m12.72-12.72 1.42-1.42" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+        <div class="user-profile" id="user-profile">
+          <div class="user-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="user-dropdown" id="user-dropdown">
+            <h4>Mi Cuenta</h4>
+            <ul>
+              <li><a href="membresia.html" class="active"><i class="fas fa-credit-card"></i> Gestión de Pagos</a></li>
+              <li><a href="../guia-nutricional/guia-nutricional.html"><i class="fas fa-calendar-check"></i>Guía Nutricional</a></li>
+              <li><a href="../rutinas/rutinas.html"><i class="fas fa-history"></i>Rutinas de Progreso</a></li>
+              <li><a href="../login/login.html"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <div class="container">
+        <a href="../home/home.html"><i class="fas fa-home"></i> Inicio</a>
+        <span class="separator">></span>
+        <span class="current">Gestión de Membresías</span>
+      </div>
+    </section>
+
+    <!-- Título Principal -->
+    <section class="page-title">
+      <div class="container">
+        <h1><i class="fas fa-crown"></i> Gestión de Membresías</h1>
+        <p>Administra tu membresía, historial de pagos y explora nuestros planes disponibles</p>
+      </div>
+    </section>
+
+    <!-- Mi Membresía Actual -->
+    <section class="current-membership" id="membership-section">
+      <div class="container">
+        <div class="loading-message">
+          <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+          </div>
+          <p>Cargando información de tu membresía...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Historial de Pagos -->
+    <section class="payment-history">
+      <div class="container">
+        <div class="section-header">
+          <h3><i class="fas fa-history"></i> Historial de Pagos</h3>
+          <p>Revisa tus últimas transacciones y comprobantes</p>
+        </div>
+        <div class="payments-container" id="payments-container">
+          <div class="loading-message">
+            <div class="loading-spinner">
+              <i class="fas fa-spinner fa-spin"></i>
+            </div>
+            <p>Cargando historial de pagos...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planes Disponibles -->
+    <section class="available-plans" id="available-plans">
+      <div class="container">
+        <div class="section-header">
+          <h3><i class="fas fa-star"></i> Planes Disponibles</h3>
+          <p>Explora nuestros planes y encuentra el que mejor se adapte a tus necesidades</p>
+        </div>
+        <div class="plans-grid">
+          <!-- Plan Básico -->
+          <div class="plan-card basico">
+            <div class="plan-header">
+              <h4>Básico</h4>
+              <div class="price">$29<span>/mes</span></div>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> Acceso a una sola sede (elige tu sede principal)</li>
+              <li><i class="fas fa-check"></i> Área de pesas y máquinas cardiovasculares</li>
+              <li><i class="fas fa-check"></i> Clases grupales (Zumba, Funcional, Spinning, etc)</li>
+              <li><i class="fas fa-check"></i> Asesoramiento básico en entrenamiento</li>
+              <li><i class="fas fa-check"></i> Uso de vestidores y duchas</li>
+              <li><i class="fas fa-check"></i> Acceso a eventos internos del gimnasio</li>
+            </ul>
+            <button class="btn-plan" data-plan="Básico">ELEGIR PLAN</button>
+          </div>
+
+          <!-- Plan Premium -->
+          <div class="plan-card premium">
+            <div class="popular-badge">Más Popular</div>
+            <div class="plan-header">
+              <h4>Premium</h4>
+              <div class="price">$49<span>/mes</span></div>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> Todo lo incluido en la Membresía Básica</li>
+              <li><i class="fas fa-check"></i> Acceso a todas las sedes</li>
+              <li><i class="fas fa-check"></i> 2 sesiones de entrenamiento personal (PT) al mes</li>
+              <li><i class="fas fa-check"></i> Guía nutricional en la app</li>
+              <li><i class="fas fa-check"></i> Seguimiento mensual de progreso físico</li>
+              <li><i class="fas fa-check"></i> Descuento en suplementos y productos del gimnasio</li>
+            </ul>
+            <button class="btn-plan" data-plan="Premium">ELEGIR PLAN</button>
+          </div>
+
+          <!-- Plan Élite -->
+          <div class="plan-card elite">
+            <div class="plan-header">
+              <h4>Élite</h4>
+              <div class="price">$69<span>/mes</span></div>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> Todo lo incluido en la Membresía Premium</li>
+              <li><i class="fas fa-check"></i> Acceso ilimitado a entrenadores personales (previa reserva)</li>
+              <li><i class="fas fa-check"></i> Plan de entrenamiento personalizado mensual</li>
+              <li><i class="fas fa-check"></i> Prioridad en reserva de clases y horarios con entrenador</li>
+              <li><i class="fas fa-check"></i> 1 suplemento post-entrenamiento por sesión (batido de proteínas o bebida energética, según disponibilidad)</li>
+            </ul>
+            <button class="btn-plan" data-plan="Élite">ELEGIR PLAN</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Métodos de Pago -->
+    <section class="payment-methods">
+      <div class="container">
+        <div class="section-header">
+          <h3><i class="fas fa-credit-card"></i> Métodos de Pago Aceptados</h3>
+          <p>Paga de forma segura con cualquiera de nuestros métodos disponibles</p>
+        </div>
+        <div class="payment-methods-grid">
+          <div class="payment-method">
+            <div class="payment-icon">
+              <i class="fab fa-cc-visa"></i>
+            </div>
+            <h4>Tarjetas de Crédito</h4>
+            <p>Visa, Mastercard, American Express</p>
+          </div>
+          <div class="payment-method">
+            <div class="payment-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <h4>Transferencia Bancaria</h4>
+            <p>Depósito o transferencia directa</p>
+          </div>
+          <div class="payment-method">
+            <div class="payment-icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <h4>Pago en Efectivo</h4>
+            <p>En cualquiera de nuestras sedes</p>
+          </div>
+          <div class="payment-method">
+            <div class="payment-icon">
+              <i class="fab fa-paypal"></i>
+            </div>
+            <h4>PayPal</h4>
+            <p>Pago seguro en línea</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal de Confirmación -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title">Confirmar Cambio de Plan</h3>
+        <button class="modal-close" id="modal-close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Contenido dinámico -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="btn-cancel">Cancelar</button>
+        <button class="btn btn-primary" id="btn-confirm">Confirmar</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="../img/imglomax.png" alt="LoMax Fitness">
+            <span>LoMax</span>
+          </div>
+          <p>En LoMax Fitness nos dedicamos a transformar vidas a través del fitness, la nutrición y el bienestar integral.</p>
+          <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-section">
+          <div class="footer-column">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+              <li><a href="../home/home.html">Inicio</a></li>
+              <li><a href="../rutinas/rutinas.html">Rutinas</a></li>
+              <li><a href="../guia-nutricional/guia-nutricional.html">Nutrición</a></li>
+              <li><a href="membresia.html">Membresía</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Servicios</h3>
+            <ul>
+              <li><a href="#">Entrenamiento Personal</a></li>
+              <li><a href="#">Rutinas Personalizadas</a></li>
+              <li><a href="#">Asesoría Nutricional</a></li>
+              <li><a href="#">Seguimiento de Progreso</a></li>
+            </ul>
+          </div>
+          <div class="footer-column contact-info">
+            <h3>Contáctanos</h3>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p><a href="mailto:info@lomaxfitness.com">info@lomaxfitness.com</a></p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <p>Lun - Dom: 24 horas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 LoMax Fitness. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="membresia.js"></script>
+</body>
+</html>

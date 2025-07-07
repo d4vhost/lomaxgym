@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoMax - Checkout</title>
+    <link rel="stylesheet" href="../cobro/cobro.css">
+    <link rel="icon" href="../img/pesa.png" type="image/x-icon" />
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=Ab8Vq-3VYQg6FCJTtXnKlzkdC2mWZykIdirC65bq_KN-3RCwZY5DA9NRzUN0Spjd6o2j4it-2H1ub0BZ&currency=USD&locale=es_EC"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sección principal del formulario -->
+        <div class="form-section">
+            <div class="logo">
+                <span class="smart">LoMax </span><span class="fit">Fitness</span>
+            </div>
+            
+            <div class="checkout-message">
+                <p>¡Quédate tranquilo! El cobro solo se hará efectivo si autorizas la compra mediante el método de pago seleccionado.</p>
+            </div>
+
+            <!-- Dirección de cobro -->
+            <div class="billing-section">
+                <h2>Dirección de cobro</h2>
+                
+                <form id="billing-form" class="billing-form">
+                    <div class="form-group">
+                        <input type="text" id="codigo-postal" name="codigoPostal" placeholder="Código postal" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="provincia" name="provincia" required>
+                                <option value="">Provincia</option>
+                                <option value="pichincha">Pichincha</option>
+                                <option value="guayas">Guayas</option>
+                                <option value="azuay">Azuay</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="ciudad" name="ciudad" required>
+                                <option value="">Ciudad</option>
+                                <option value="quito">Quito</option>
+                                <option value="guayaquil">Guayaquil</option>
+                                <option value="cuenca">Cuenca</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="sector" name="sector" placeholder="Sector" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="interseccion" name="interseccion" placeholder="Intersección" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="direccion" name="direccion" placeholder="Dirección" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="numero" name="numero" placeholder="Número" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="referencia" name="referencia" placeholder="Referencia">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="direccion-principal" name="esDireccionPrincipal">
+                            Establecer como dirección principal
+                        </label>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Forma de pago -->
+            <div class="payment-section">
+                <h2>Forma de pago</h2>
+                
+                <div class="payment-methods">
+                    <div class="payment-option active">
+                        <input type="radio" id="tarjeta-credito" name="payment-method" value="credit" checked>
+                        <label for="tarjeta-credito">TARJETA DE CRÉDITO</label>
+                        <div class="payment-icons">
+                            <img src="../img/visa.png" alt="Visa" class="payment-icon">
+                            <img src="../img/mastercard.png" alt="Mastercard" class="payment-icon">
+                            <img src="../img/dinnersclub.png" alt="Diners Club" class="payment-icon">
+                        </div>
+                    </div>
+                    
+                    <div class="payment-option">
+                        <input type="radio" id="cuenta-debito" name="payment-method" value="debit">
+                        <label for="cuenta-debito">CUENTA PARA EL DÉBITO</label>
+                        <div class="payment-icons">
+                            <img src="../img/debit.png" alt="Débito" class="payment-icon">
+                            <img src="../img/debit2.png" alt="Banco" class="payment-icon">
+                            <img src="../img/bank.png" alt="Banco" class="payment-icon">
+                        </div>
+                    </div>
+
+                    <div class="payment-option">
+                        <input type="radio" id="paypal-gateway" name="payment-method" value="paypal">
+                        <label for="paypal-gateway">PAGAR CON PASARELA DE PAGOS</label>
+                        <div class="payment-icons">
+                            <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal" class="payment-icon" style="height: 30px;">
+                            <span class="payment-badge">Seguro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario de tarjeta de crédito -->
+                <div class="card-form" id="card-form">
+                    <div class="form-group">
+                        <label for="identificacion">IDENTIFICACIÓN DEL TITULAR</label>
+                        <input type="text" id="identificacion" name="identificacionTitular" placeholder="1725881211" required>
+                        <div class="help-icon">?</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tipo-tarjeta">TIPO DE TARJETA</label>
+                        <select id="tipo-tarjeta" name="idTipoTarjeta" required>
+                            <option value="">Selecciona el tipo de tarjeta</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="numero-tarjeta" name="numeroTarjeta" placeholder="Número de tarjeta" maxlength="19" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="nombre-tarjeta" name="nombreImpreso" placeholder="Nombre impreso en la tarjeta" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="vencimiento" name="vencimiento" placeholder="Vencimiento (mm/aa)" maxlength="5" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="cvv" name="cvv" placeholder="CVV" maxlength="4" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="tarjeta-principal" name="esTarjetaPrincipal">
+                            Establecer como tarjeta principal
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Sección de PayPal -->
+                <div class="paypal-section" id="paypal-section" style="display: none;">
+                    <div class="paypal-info">
+                        <h3>Pago Seguro con PayPal</h3>
+                        <p>Serás redirigido a PayPal para completar tu pago de forma segura. No necesitas tener una cuenta PayPal, también puedes pagar con tarjeta de crédito.</p>
+                        
+                        <div class="paypal-features">
+                            <div class="feature">
+                                <span class="feature-icon">🔒</span>
+                                <span>Pago 100% seguro</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">💳</span>
+                                <span>Acepta todas las tarjetas</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">⚡</span>
+                                <span>Proceso rápido</span>
+                            </div>
+                        </div>
+
+                        <!-- Contenedor para los botones de PayPal -->
+                        <div id="paypal-button-container"></div>
+                    </div>
+                </div>
+
+                <!-- Términos y condiciones -->
+                <div class="terms-section">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="terms-checkbox" required>
+                        <label for="terms-checkbox" class="terms-text">
+                            Leí y acepto los <a href="#" class="terms-link">términos de inscripción</a>, las 
+                            <a href="#" class="terms-link">normas y los reglamentos de uso</a>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Botón finalizar compra (solo para tarjetas) -->
+                <button type="button" id="finalize-btn" class="finalize-btn">FINALIZAR LA COMPRA</button>
+
+                <!-- Métodos de pago aceptados -->
+                <div class="accepted-payments">
+                    <div class="payment-group">
+                        <h4>Tarjetas de crédito</h4>
+                        <div class="payment-logos">
+                            <img src="../img/visa.png" alt="Visa" class="card-logo">
+                            <img src="../img/mastercard.png" alt="Mastercard" class="card-logo">
+                            <img src="../img/dinnersclub.png" alt="Diners Club" class="card-logo">
+                        </div>
+                    </div>
+                    
+                    <div class="payment-group">
+                        <h4>Débito</h4>
+                        <div class="payment-logos">
+                            <img src="../img/debit.png" alt="Débito" class="card-logo">
+                            <img src="../img/debit2.png" alt="Banco" class="card-logo">
+                            <img src="../img/bank.png" alt="Banco" class="card-logo">
+                        </div>
+                    </div>
+
+                    <div class="payment-group">
+                        <h4>Pasarela de Pagos</h4>
+                        <div class="payment-logos">
+                            <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal" class="card-logo" style="height: 30px;">
+                        </div>
+                    </div>
+                    
+                    <div class="security-badge">
+                        <div class="security-icon">🔒</div>
+                        <div class="security-text">
+                            <div>PAGOS SEGUROS</div>
+                            <div>100% PROTEGIDO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Detalles de compra -->
+        <div class="purchase-details">
+            <div class="purchase-header">
+                <h3>Usted está comprando:</h3>
+            </div>
+            
+            <div class="plan-info">
+                <h2 id="plan-nombre">Plan</h2>
+                <p class="gym-location" id="instalacion-nombre">Instalación</p>
+                <p class="plan-price" id="plan-precio">$ 0 /mes</p>
+            </div>
+            
+            <div class="plan-features" id="plan-caracteristicas">
+                <!-- Las características se cargarán dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de confirmación -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Confirmación de compra</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>¿Está seguro de que desea procesar la compra?</p>
+                <div class="modal-actions">
+                    <button id="confirm-purchase" class="btn-confirm">Confirmar</button>
+                    <button id="cancel-purchase" class="btn-cancel">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de resultado -->
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="result-title">Resultado</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p id="result-message"></p>
+                <div id="result-details"></div>
+                <div class="modal-actions">
+                    <button id="close-result" class="btn-confirm">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de procesamiento PayPal -->
+    <div id="paypal-processing-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Procesando pago con PayPal</h3>
+            </div>
+            <div class="modal-body">
+                <div class="processing-spinner"></div>
+                <p>Por favor espere mientras procesamos su pago...</p>
+                <p><small>No cierre esta ventana</small></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../cobro/cobro.js"></script>
+
+    <style>
+        /* Estilos adicionales para PayPal */
+        .paypal-section {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 20px;
+            border: 2px solid #e9ecef;
+        }
+
+        .paypal-section h3 {
+            color: #16253D;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .paypal-section h3::before {
+            content: "💰";
+            font-size: 24px;
+        }
+
+        .paypal-info p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .paypal-features {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .feature-icon {
+            font-size: 18px;
+        }
+
+        #paypal-button-container {
+            margin-top: 20px;
+        }
+
+        .payment-badge {
+            background: #00457C;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .processing-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #CD7213;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .payment-option {
+            transition: all 0.3s ease;
+        }
+
+        .payment-option:hover {
+            background: #f8f9fa;
+            transform: translateY(-2px);
+        }
+
+        .payment-option.active {
+            background: #e8f4f8;
+            border-color: #CD7213;
+        }
+
+        /* Responsive para móviles */
+        @media (max-width: 768px) {
+            .paypal-features {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .feature {
+                justify-content: center;
+            }
+        }
+    </style>
+    
+</body>
+</html>

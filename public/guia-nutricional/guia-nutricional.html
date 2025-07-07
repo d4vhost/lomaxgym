@@ -1,0 +1,277 @@
+<!--guia-nutricional/guia-nutricional.html-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guía Nutricional - LoMax Fitness</title>
+  <link rel="stylesheet" href="../home/home.css" />
+  <link rel="stylesheet" href="guia-nutricional.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="icon" href="../img/pesa.png" type="image/x-icon" />
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="../img/imglomax.png" alt="LoMax Fitness" class="logo-img">
+        <span>LoMax</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../home/home.html">Inicio</a></li>
+        <li><a href="../rutinas/rutinas.html">Rutinas</a></li>
+        <li><a href="guia-nutricional.html" class="active">Nutrición</a></li>
+        <li><a href="../membresia/membresia.html">Membresía</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+            <path d="m12 1 0 2m0 18 0 2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12l2 0m18 0 2 0M4.22 19.78l1.42-1.42m12.72-12.72 1.42-1.42" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+        <div class="user-profile" id="user-profile">
+          <div class="user-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="user-dropdown" id="user-dropdown">
+            <h4>Mi Cuenta</h4>
+            <ul>
+              <li><a href="../membresia/membresia.html"><i class="fas fa-credit-card"></i> Gestión de Pagos</a></li>
+              <li><a href="guia-nutricional.html"><i class="fas fa-calendar-check"></i>Guía Nutricional</a></li>
+              <li><a href="../rutinas/rutinas.html"><i class="fas fa-history"></i>Rutinas de Progreso</a></li>
+              <li><a href="../login/login.html"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Navegación de regreso -->
+    <section class="breadcrumb">
+      <div class="container">
+        <a href="../home/home.html"><i class="fas fa-home"></i> Inicio</a>
+        <span class="separator">></span>
+        <span class="current">Guía Nutricional</span>
+      </div>
+    </section>
+
+    <!-- Información del perfil nutricional -->
+    <section class="perfil-nutricional" id="perfil-section">
+      <div class="container">
+        <h1><i class="fas fa-apple-alt"></i> Tu Guía Nutricional</h1>
+        <p id="descripcion-usuario">Plan nutricional personalizado según tus objetivos</p>
+        <div class="perfil-grid" id="perfil-grid">
+          <div class="perfil-card">
+            <div class="perfil-icon">
+              <i class="fas fa-target"></i>
+            </div>
+            <h3>Objetivo</h3>
+            <p id="objetivo-usuario">Cargando...</p>
+          </div>
+          <div class="perfil-card">
+            <div class="perfil-icon">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <h3>Alergias</h3>
+            <p id="alergias-usuario">Cargando...</p>
+          </div>
+          <div class="perfil-card">
+            <div class="perfil-icon">
+              <i class="fas fa-running"></i>
+            </div>
+            <h3>Actividad</h3>
+            <p id="actividad-usuario">Cargando...</p>
+          </div>
+          <div class="perfil-card">
+            <div class="perfil-icon">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <h3>IMC</h3>
+            <p id="imc-usuario">Cargando...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección principal de comidas -->
+    <section class="nutricion-diaria" id="comidas-diarias">
+      <div class="container">
+        <div class="loading-message">
+          <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+          </div>
+          <p>Cargando tu plan nutricional personalizado...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de estadísticas nutricionales -->
+    <section class="estadisticas-nutricionales">
+      <div class="container">
+        <h2 class="section-title">Resumen Nutricional del Día</h2>
+        <div class="stats-nutricionales-grid" id="stats-nutricionales">
+          <div class="stat-nutricional">
+            <div class="stat-icon">
+              <i class="fas fa-fire"></i>
+            </div>
+            <h3 id="total-calorias">0</h3>
+            <p>Calorías totales</p>
+          </div>
+          <div class="stat-nutricional">
+            <div class="stat-icon">
+              <i class="fas fa-drumstick-bite"></i>
+            </div>
+            <h3 id="total-proteinas">0g</h3>
+            <p>Proteínas</p>
+          </div>
+          <div class="stat-nutricional">
+            <div class="stat-icon">
+              <i class="fas fa-bread-slice"></i>
+            </div>
+            <h3 id="total-carbohidratos">0g</h3>
+            <p>Carbohidratos</p>
+          </div>
+          <div class="stat-nutricional">
+            <div class="stat-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3 id="total-grasas">0g</h3>
+            <p>Grasas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de consejos nutricionales -->
+    <section class="consejos-nutricionales">
+      <div class="container">
+        <h2 class="section-title">Consejos Nutricionales</h2>
+        <div class="consejos-grid">
+          <div class="consejo-card">
+            <div class="consejo-icon">
+              <i class="fas fa-tint"></i>
+            </div>
+            <h3>Hidratación</h3>
+            <p>Bebe al menos 2-3 litros de agua al día. La hidratación es clave para el rendimiento óptimo.</p>
+          </div>
+          <div class="consejo-card">
+            <div class="consejo-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Horarios</h3>
+            <p>Mantén horarios regulares de comida. Tu cuerpo agradecerá la rutina y optimizará el metabolismo.</p>
+          </div>
+          <div class="consejo-card">
+            <div class="consejo-icon">
+              <i class="fas fa-balance-scale"></i>
+            </div>
+            <h3>Porciones</h3>
+            <p>Controla las porciones según tu actividad física y objetivos específicos de composición corporal.</p>
+          </div>
+          <div class="consejo-card">
+            <div class="consejo-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Variedad</h3>
+            <p>Incluye una amplia variedad de alimentos para obtener todos los micronutrientes esenciales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de hidratación -->
+    <section class="hidratacion-section">
+      <div class="container">
+        <div class="hidratacion-content">
+          <div class="hidratacion-info">
+            <h2>💧 Control de Hidratación</h2>
+            <p>Mantén un registro de tu consumo diario de agua para optimizar tu rendimiento.</p>
+            <div class="hidratacion-stats">
+              <div class="hidratacion-goal">
+                <span class="goal-number" id="vasos-objetivo">8</span>
+                <span class="goal-text">vasos objetivo</span>
+              </div>
+              <div class="hidratacion-current">
+                <span class="current-number" id="vasos-actuales">0</span>
+                <span class="current-text">vasos consumidos</span>
+              </div>
+            </div>
+            <button class="btn-hidratacion" onclick="agregarVasoAgua()">
+              <i class="fas fa-plus"></i> Agregar vaso
+            </button>
+          </div>
+          <div class="hidratacion-visual">
+            <div class="water-bottle" id="water-bottle">
+              <div class="water-level" id="water-level"></div>
+              <div class="bottle-label">H₂O</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="../img/imglomax.png" alt="LoMax Fitness">
+            <span>LoMax</span>
+          </div>
+          <p>En LoMax Fitness nos dedicamos a transformar vidas a través del fitness, la nutrición y el bienestar integral.</p>
+          <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-section">
+          <div class="footer-column">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+              <li><a href="../home/home.html">Inicio</a></li>
+              <li><a href="../rutinas/rutinas.html">Rutinas</a></li>
+              <li><a href="guia-nutricional.html">Nutrición</a></li>
+              <li><a href="../membresia/membresia.html">Membresía</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Servicios</h3>
+            <ul>
+              <li><a href="#">Entrenamiento Personal</a></li>
+              <li><a href="#">Rutinas Personalizadas</a></li>
+              <li><a href="#">Asesoría Nutricional</a></li>
+              <li><a href="#">Seguimiento de Progreso</a></li>
+            </ul>
+          </div>
+          <div class="footer-column contact-info">
+            <h3>Contáctanos</h3>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p><a href="mailto:info@lomaxfitness.com">info@lomaxfitness.com</a></p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <p>Lun - Dom: 24 horas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 LoMax Fitness. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="guia-nutricional.js"></script>
+</body>
+</html>

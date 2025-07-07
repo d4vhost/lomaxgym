@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rutinas de Progreso - LoMax Fitness</title>
+  <link rel="stylesheet" href="../home/home.css" />
+  <link rel="stylesheet" href="rutinas.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="icon" href="../img/pesa.png" type="image/x-icon" />
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="../img/imglomax.png" alt="LoMax Fitness" class="logo-img">
+        <span>LoMax</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../home/home.html">Inicio</a></li>
+        <li><a href="rutinas.html" class="active">Rutinas</a></li>
+        <li><a href="../guia-nutricional/guia-nutricional.html">Nutrición</a></li>
+        <li><a href="../membresia/membresia.html">Membresía</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+            <path d="m12 1 0 2m0 18 0 2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12l2 0m18 0 2 0M4.22 19.78l1.42-1.42m12.72-12.72 1.42-1.42" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+        <div class="user-profile" id="user-profile">
+          <div class="user-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="user-dropdown" id="user-dropdown">
+            <h4>Mi Cuenta</h4>
+            <ul>
+              <li><a href="../membresia/membresia.html"><i class="fas fa-credit-card"></i> Gestión de Pagos</a></li>
+              <li><a href="../guia-nutricional/guia-nutricional.html"><i class="fas fa-calendar-check"></i>Guía Nutricional</a></li>
+              <li><a href="rutinas.html"><i class="fas fa-history"></i>Rutinas de Progreso</a></li>
+              <li><a href="../login/login.html"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Navegación de regreso -->
+    <section class="breadcrumb">
+      <div class="container">
+        <a href="../home/home.html"><i class="fas fa-home"></i> Inicio</a>
+        <span class="separator">></span>
+        <span class="current">Rutinas de Progreso</span>
+      </div>
+    </section>
+
+    <!-- Sección de estadísticas de progreso -->
+    <section class="estadisticas-progreso">
+      <div class="container">
+        <h1><i class="fas fa-dumbbell"></i> Rutinas de Progreso</h1>
+        <p id="descripcion-usuario">Tu plan de entrenamiento personalizado</p>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <h3 id="dias-entrenados">0</h3>
+            <p>Días entrenados</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-fire"></i>
+            </div>
+            <h3 id="ejercicios-completados">0</h3>
+            <p>Ejercicios completados</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3 id="racha-actual">0</h3>
+            <p>Racha actual</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-target"></i>
+            </div>
+            <h3 id="objetivo-usuario">-</h3>
+            <p>Tu objetivo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección principal de rutinas -->
+    <section class="rutinas-diarias" id="rutinas-diarias">
+      <div class="container">
+        <div class="loading-message">
+          <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+          </div>
+          <p>Cargando tu rutina personalizada...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de historial de rutinas -->
+    <section class="historial-rutinas">
+      <div class="container">
+        <h2 class="section-title">Historial de Entrenamientos</h2>
+        <div class="historial-container" id="historial-container">
+          <div class="mensaje-historial">
+            <p>Aquí aparecerá el historial de tus entrenamientos completados.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de consejos de entrenamiento -->
+    <section class="consejos-entrenamiento-section">
+      <div class="container">
+        <h2 class="section-title">Consejos de Entrenamiento</h2>
+        <div class="consejos-grid">
+          <div class="consejo-card">
+            <div class="consejo-icon">
+              <i class="fas fa-thermometer-half"></i>
+            </div>
+            <h3>Calentamiento</h3>
+            <p>Siempre dedica 5-10 minutos al calentamiento antes de entrenar para preparar tu cuerpo.</p>
+          </div>
+          <div class="consejo-card">
+            <div class="consejo-icon">
+              <i class="fas fa-weight-hanging"></i>
+            </div>
+            <h3>Progresión</h3>
+            <p>Aumenta gradualmente el peso o las repeticiones para seguir desafiando tus músculos.</p>
+          </div>
+          <div class="consejo-card">
+            <div class="consejo-icon">
+              <i class="fas fa-bed"></i>
+            </div>
+            <h3>Descanso</h3>
+            <p>El descanso es crucial. Permite que tus músculos se recuperen entre sesiones.</p>
+          </div>
+          <div class="consejo-card">
+            <div class="consejo-icon">
+              <i class="fas fa-stopwatch"></i>
+            </div>
+            <h3>Constancia</h3>
+            <p>La clave del éxito está en mantener una rutina consistente semana tras semana.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="../img/imglomax.png" alt="LoMax Fitness">
+            <span>LoMax</span>
+          </div>
+          <p>En LoMax Fitness nos dedicamos a transformar vidas a través del fitness, la nutrición y el bienestar integral.</p>
+          <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-section">
+          <div class="footer-column">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+              <li><a href="../home/home.html">Inicio</a></li>
+              <li><a href="rutinas.html">Rutinas</a></li>
+              <li><a href="../guia-nutricional/guia-nutricional.html">Nutrición</a></li>
+              <li><a href="../membresia/membresia.html">Membresía</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Servicios</h3>
+            <ul>
+              <li><a href="#">Entrenamiento Personal</a></li>
+              <li><a href="#">Rutinas Personalizadas</a></li>
+              <li><a href="#">Asesoría Nutricional</a></li>
+              <li><a href="#">Seguimiento de Progreso</a></li>
+            </ul>
+          </div>
+          <div class="footer-column contact-info">
+            <h3>Contáctanos</h3>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p><a href="mailto:info@lomaxfitness.com">info@lomaxfitness.com</a></p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <p>Lun - Dom: 24 horas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 LoMax Fitness. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="rutinas.js"></script>
+</body>
+</html>

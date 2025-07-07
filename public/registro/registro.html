@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartFit - Registro</title>
+    <link rel="stylesheet" href="../registro/registro.css">
+    <link rel="icon" href="../img/pesa.png" type="image/x-icon" />
+</head>
+<body>
+    <div class="container">
+        <!-- Formulario Principal -->
+        <div class="form-section">
+            <div class="logo">
+                <span class="smart">Gym LoMax </span><span class="fit">Fitness</span>
+            </div>
+            
+            <h1 class="form-title">Crea un usuario para continuar</h1>
+            
+            <form id="registration-form" class="registration-form">
+                <div class="form-group">
+                    <label for="cedula">C.I.</label>
+                    <input type="text" id="cedula" placeholder="Ingrese su documento">
+                    <span class="error-message" id="cedula-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre completo">
+                    <span class="error-message" id="nombre-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Ej: lomax@fitness.com">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" placeholder="Ingrese su contraseña">
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="sexo">Sexo</label>
+                    <select id="sexo">
+                        <option value="">Toque para elegir</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select>
+                    <span class="error-message" id="sexo-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="celular">Número de Celular</label>
+                    <div class="phone-input">
+                        <div class="country-code">
+                            <img src="../img/ecuador.png" alt="Ecuador flag" class="flag">
+                            <span>+593</span>
+                        </div>
+                        <input type="tel" id="celular" placeholder="xxx xxx xxxx">
+                    </div>
+                    <span class="error-message" id="celular-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="fecha">Fecha de Nacimiento</label>
+                    <input type="date" id="fecha" placeholder="__/__/____">
+                    <span class="error-message" id="fecha-error"></span>
+                </div>
+                
+                <div class="terms-section">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="terms">
+                        <label for="terms" class="terms-text">
+                            Yo, en mi calidad de usuario acepto y autorizo a LoMax Fitness el tratamiento 
+                            de mis datos de acuerdo a la Política de Tratamiento de Datos de la 
+                            Compañía. La política de tratamiento de datos se encuentra en el 
+                            <a href="#" class="terms-link">siguiente enlace</a>.
+                        </label>
+                    </div>
+                    <span class="error-message" id="terms-error"></span>
+                </div>
+                
+                <button type="submit" class="continue-btn">Continuar al registro</button>
+            </form>
+            
+            <!-- Métodos de Pago -->
+            <div class="payment-methods">
+                <div class="payment-section">
+                    <h3>Tarjetas de crédito</h3>
+                    <div class="credit-cards">
+                        <img src="../img/visa.png" alt="Visa" class="card-logo">
+                        <img src="../img/mastercard.png" alt="Mastercard" class="card-logo">
+                        <img src="../img/dinnersclub.png" alt="Diners" class="card-logo">
+                    </div>
+                </div>
+                
+                <div class="payment-section">
+                    <h3>Débito</h3>
+                    <div class="debit-cards">
+                        <img src="../img/debit.png" alt="Débito" class="card-logo red">
+                        <img src="../img/debit2.png" alt="Banco" class="card-logo orange">
+                        <img src="../img/bank.png" alt="Banco" class="card-logo blue">
+                    </div>
+                </div>
+                
+                <div class="security-badge">
+                    <div class="security-icon">🔒</div>
+                    <div class="security-text">
+                        <div>MEDIO AMBIENTE</div>
+                        <div>100% SEGURO</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Detalles de Compra -->
+        <div class="purchase-details">
+            <h2 class="details-title">Detalles de la compra</h2>
+            
+            <div class="gym-info">
+                <h3 id="instalacion-nombre"></h3>
+                <p class="gym-address" id="instalacion-direccion"></p>
+            </div>
+            
+            <div class="plan-card">
+                <div class="plan-header" id="plan-titulo"></div>
+                <div class="plan-benefit">
+                    <span class="benefit-icon">🏃</span>
+                    <span class="benefit-text" id="plan-descripcion"></span>
+                </div>
+            </div>
+            
+            <div class="pricing-details">
+                <div class="plan-details" id="plan-beneficios">
+                    <!-- Aquí se cargarán los beneficios de la membresía -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="registro.js"></script>
+</body>
+</html>

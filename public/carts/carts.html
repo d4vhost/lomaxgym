@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartFit - Planes</title>
+    <link rel="stylesheet" href="../carts/carts.css">
+    <link rel="icon" href="../img/pesa.png" type="image/x-icon" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Sección Principal de Planes -->
+        <div class="form-section">
+            <div class="logo">
+                <span class="smart">Gym LoMax </span><span class="fit">Fitness</span>
+            </div>
+            
+            <h1 class="form-title">SELECCIONA TU PLAN DE MEMBRESÍA</h1>
+            
+            <div class="plans-container" id="plans-container">
+                <!-- Los planes se cargarán dinámicamente desde la API -->
+                <div class="loading">Cargando planes disponibles...</div>
+            </div>
+            
+            <button type="submit" class="continue-btn" id="continue-btn">Continuar al registro</button>
+            
+            <!-- Métodos de Pago -->
+            <div class="payment-methods">
+                <div class="payment-section">
+                    <h3>Tarjetas de crédito</h3>
+                    <div class="credit-cards">
+                        <img src="../img/visa.png" alt="Visa" class="card-logo">
+                        <img src="../img/mastercard.png" alt="Mastercard" class="card-logo">
+                        <img src="../img/dinnersclub.png" alt="Diners" class="card-logo">
+                    </div>
+                </div>
+                
+                <div class="payment-section">
+                    <h3>Débito</h3>
+                    <div class="debit-cards">
+                        <img src="../img/debit.png" alt="Débito" class="card-logo red">
+                        <img src="../img/debit2.png" alt="Banco" class="card-logo orange">
+                        <img src="../img/bank.png" alt="Banco" class="card-logo blue">
+                    </div>
+                </div>
+                
+                <div class="security-badge">
+                    <div class="security-icon">🔒</div>
+                    <div class="security-text">
+                        <div>MEDIO AMBIENTE</div>
+                        <div>100% SEGURO</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Detalles de Compra -->
+        <div class="purchase-details">
+            <h2 class="details-title">Detalles de la compra</h2>
+            
+            <div class="gym-info">
+                <h3>Selecciona tu sede</h3>
+                <div class="sede-selector-container">
+                    <select id="instalacion-select" class="instalacion-select">
+                        <option value="">Cargando instalaciones...</option>
+                    </select>
+                    <div class="sede-icon">📍</div>
+                </div>
+                <p class="gym-address" id="gym-address"></p>
+                <a href="#" class="academy-link" id="ver-academia">
+                    <span class="map-icon">🗺️</span>
+                    Ver instalación en el mapa
+                </a>
+            </div>
+            
+            <div class="plan-card" id="plan-card">
+                <div class="plan-header">Selecciona un plan</div>
+                <div class="plan-benefit">
+                    <span class="benefit-icon">🏃</span>
+                    <span class="benefit-text">Selecciona un plan para ver sus beneficios</span>
+                </div>
+            </div>
+            
+            <div class="pricing-details" id="plan-benefits">
+                <!-- Los beneficios de la membresía seleccionada se cargarán aquí -->
+                <div class="price-item">
+                    <div class="price-label">
+                        <strong>Selecciona un plan para ver sus beneficios</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal del Mapa -->
+    <div id="map-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Ubicación de la sede</h3>
+                <span class="close-modal" id="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="loading-map" class="loading-map">
+                    <div class="spinner"></div>
+                    <p>Cargando mapa y calculando ruta...</p>
+                </div>
+                <div id="route-info-top" class="route-info-top" style="display: none;">
+                    <span id="distance-text">Calculando distancia...</span> • <span id="time-text">Calculando tiempo...</span>
+                </div>
+                <div id="map-container" style="height: 400px; width: 100%; display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../carts/carts.js"></script>
+</body>
+</html>

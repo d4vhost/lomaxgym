@@ -1,0 +1,988 @@
+/* ===== MEMBRESÍA CSS - GAMA DE COLORES CONSISTENTE ===== */
+
+/* Variables específicas para membresías - Modo Claro */
+:root {
+    /* Colores principales optimizados - NUEVA GAMA AZUL */
+    --membresia-primary: #007aff;
+    --membresia-secondary: #5856d6;
+    --membresia-gradient: #1c1c1e;
+    
+    /* Colores para planes en modo claro - NUEVA GAMA AZUL */
+    --plan-basico: #007aff;
+    --plan-premium: #5856d6;
+    --plan-elite: #34c759;
+    --plan-basico-gradient: linear-gradient(135deg, #007aff 0%, #42a5f5 100%);
+    --plan-premium-gradient: linear-gradient(135deg, #5856d6 0%, #7986cb 100%);
+    --plan-elite-gradient: linear-gradient(135deg, #34c759 0%, #66bb6a 100%);
+    
+    /* Estados de membresía */
+    --activa-color: #34c759;
+    --por-vencer-color: #ff9500;
+    --expirada-color: #ff3b30;
+    
+    /* Colores para pagos */
+    --pago-exitoso: #34c759;
+    --pago-pendiente: #ff9500;
+    --pago-fallido: #ff3b30;
+    
+    /* Backgrounds para modo claro */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-tertiary: #e9ecef;
+    --card-bg: #ffffff;
+    --border-color: rgba(0, 122, 255, 0.15);
+    --text-primary: #000000; /* NEGRO para modo claro */
+    --text-secondary: #666666;
+    --text-tertiary: #8e8e93;
+    --shadow-light: rgba(0, 122, 255, 0.1);
+}
+
+[data-theme="dark"] {
+    /* Colores principales optimizados - NUEVA GAMA AZUL OSCURO */
+    --membresia-primary: #0a84ff;
+    --membresia-secondary: #5e5ce6;
+    --membresia-gradient: linear-gradient(135deg, #0a84ff 0%, #5e5ce6 100%);
+    
+    /* Colores para planes en modo oscuro - NUEVA GAMA AZUL OSCURO */
+    --plan-basico: #0a84ff;
+    --plan-premium: #5e5ce6;
+    --plan-elite: #30d158;
+    --plan-basico-gradient: linear-gradient(135deg, #0a84ff 0%, #42a5f5 100%);
+    --plan-premium-gradient: linear-gradient(135deg, #5e5ce6 0%, #7986cb 100%);
+    --plan-elite-gradient: linear-gradient(135deg, #30d158 0%, #66bb6a 100%);
+    
+    /* Estados de membresía optimizados para fondo negro */
+    --activa-color: #30d158;
+    --por-vencer-color: #ff9f0a;
+    --expirada-color: #ff453a;
+    
+    /* Colores para pagos en modo oscuro */
+    --pago-exitoso: #30d158;
+    --pago-pendiente: #ff9f0a;
+    --pago-fallido: #ff453a;
+    
+    /* Backgrounds para modo oscuro */
+    --bg-primary: #000000;
+    --bg-secondary: #1c1c1e;
+    --bg-tertiary: #2c2c2e;
+    --card-bg: #1c1c1e;
+    --border-color: rgba(10, 132, 255, 0.2);
+    --text-primary: #ffffff; /* BLANCO para modo oscuro */
+    --text-secondary: #8e8e93;
+    --text-tertiary: #6b7280;
+    --shadow-light: rgba(0, 0, 0, 0.4);
+}
+
+/* Layout principal */
+main {
+    padding-top: 64px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background: var(--bg-secondary);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.breadcrumb .container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.breadcrumb a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--membresia-primary);
+}
+
+.separator {
+    color: var(--text-tertiary);
+    font-size: 0.8rem;
+}
+
+.current {
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Título principal */
+.page-title {
+    padding: 20px 0;
+    background: var(--bg-primary);
+    text-align: center;
+}
+
+.page-title h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    background: var(--membresia-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+}
+
+.page-title p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+}
+
+/* Loading Message */
+.loading-message {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.loading-spinner {
+    font-size: 2rem;
+    color: var(--membresia-primary);
+    margin-bottom: 16px;
+}
+
+.loading-message p {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+}
+
+/* Membresía Actual */
+.current-membership {
+    padding: 40px 0;
+    background: var(--bg-primary);
+}
+
+.membership-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px var(--shadow-light);
+    border: 1px solid var(--border-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.membership-header {
+    background: var(--membresia-gradient);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: white;
+}
+
+.membership-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.membership-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.membership-info h3 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.membership-expiry {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.membership-expiry span {
+    font-weight: 600;
+}
+
+/* Estados de membresía */
+.estado-activa span {
+    color: var(--activa-color);
+    font-weight: 600;
+}
+
+.estado-por-vencer span {
+    color: var(--por-vencer-color);
+    font-weight: 600;
+}
+
+.estado-expirada span {
+    color: var(--expirada-color);
+    font-weight: 600;
+}
+
+.membership-details {
+    padding: 24px;
+}
+
+.membership-progress {
+    margin-bottom: 24px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--bg-tertiary);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress {
+    height: 100%;
+    background: var(--membresia-gradient);
+    border-radius: 4px;
+    transition: width 0.8s ease;
+}
+
+.membership-progress p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.membership-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+}
+
+.membership-features li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+}
+
+.membership-features i {
+    color: var(--membresia-primary);
+    font-size: 0.875rem;
+    width: 14px;
+}
+
+.membership-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: var(--membresia-gradient);
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 122, 255, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.4);
+}
+
+.btn-secondary {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background: var(--card-bg);
+    border-color: var(--membresia-primary);
+}
+
+/* Mensajes especiales */
+.mensaje-sin-membresia,
+.mensaje-error {
+    background: var(--card-bg);
+    padding: 32px 24px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 16px var(--shadow-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.mensaje-sin-membresia h3,
+.mensaje-error h3 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.mensaje-sin-membresia p,
+.mensaje-error p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Historial de Pagos */
+.payment-history {
+    padding: 40px 0;
+    background: var(--bg-tertiary);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.section-header h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.section-header h3 i {
+    color: var(--membresia-primary);
+    margin-right: 8px;
+}
+
+.section-header p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.payments-container {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    gap: 12px;
+}
+
+.payment-item {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.payment-item:hover {
+    border-color: var(--membresia-primary);
+    box-shadow: 0 4px 12px var(--shadow-light);
+}
+
+.payment-info h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.payment-info p {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.payment-info i {
+    width: 14px;
+    color: var(--membresia-primary);
+}
+
+.payment-details {
+    text-align: right;
+}
+
+.payment-amount {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.payment-status {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-pagado {
+    background: rgba(52, 199, 89, 0.1);
+    color: var(--pago-exitoso);
+}
+
+.status-pendiente {
+    background: rgba(255, 149, 0, 0.1);
+    color: var(--pago-pendiente);
+}
+
+.status-fallido {
+    background: rgba(255, 59, 48, 0.1);
+    color: var(--pago-fallido);
+}
+
+.mensaje-sin-pagos {
+    background: var(--card-bg);
+    padding: 32px 24px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.mensaje-sin-pagos h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.mensaje-sin-pagos p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* Planes Disponibles */
+.available-plans {
+    padding: 40px 0;
+    background: var(--bg-primary);
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.plan-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    position: relative;
+    box-shadow: 0 2px 12px var(--shadow-light);
+    transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px var(--shadow-light);
+}
+
+.popular-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--membresia-gradient);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0, 122, 255, 0.3);
+}
+
+.plan-header {
+    padding: 24px 20px;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+/* Estilos específicos por plan */
+.plan-card.basico .plan-header {
+    background: var(--plan-basico-gradient);
+}
+
+.plan-card.basico .plan-icon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.plan-card.premium .plan-header {
+    background: var(--plan-premium-gradient);
+}
+
+.plan-card.premium .plan-icon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.plan-card.elite .plan-header {
+    background: var(--plan-elite-gradient);
+}
+
+.plan-card.elite .plan-icon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.plan-header h4 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.plan-features li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+}
+
+.plan-features i {
+    width: 14px;
+    font-size: 0.8rem;
+    color: var(--membresia-primary);
+}
+
+.btn-plan {
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.plan-card.basico .btn-plan {
+    background: var(--plan-basico-gradient);
+}
+
+.plan-card.premium .btn-plan {
+    background: var(--plan-premium-gradient);
+}
+
+.plan-card.elite .btn-plan {
+    background: var(--plan-elite-gradient);
+}
+
+.btn-plan:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Métodos de Pago */
+.payment-methods {
+    padding: 40px 0;
+    background: var(--bg-tertiary);
+}
+
+.payment-methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 32px;
+}
+
+.payment-method {
+    background: var(--card-bg);
+    padding: 24px 20px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease;
+}
+
+.payment-method:hover {
+    border-color: var(--membresia-primary);
+    box-shadow: 0 4px 12px var(--shadow-light);
+}
+
+.payment-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 16px;
+    background: var(--membresia-gradient);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-icon i {
+    font-size: 1.25rem;
+    color: white;
+}
+
+.payment-method h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.payment-method p {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: var(--card-bg);
+    border-radius: 16px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    padding: 20px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.modal-close {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: var(--bg-tertiary);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+    background: var(--membresia-primary);
+    color: white;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+/* Contenido específico del modal */
+.cambio-plan-info h4,
+.renovacion-info h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.cambio-plan-info p,
+.renovacion-info p {
+    margin-bottom: 6px;
+    color: var(--text-secondary);
+}
+
+.diferencia-precio {
+    padding: 12px;
+    background: var(--bg-tertiary);
+    border-radius: 8px;
+    margin: 12px 0;
+    border-left: 4px solid var(--membresia-primary);
+}
+
+.confirmacion-cambio {
+    background: rgba(0, 122, 255, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    border-left: 4px solid var(--membresia-primary);
+}
+
+.confirmacion-cambio i {
+    color: var(--membresia-primary);
+    margin-top: 2px;
+}
+
+.metodos-pago {
+    margin-top: 12px;
+}
+
+.metodos-pago h5 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.metodo-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.metodo-item:hover {
+    background: var(--bg-tertiary);
+}
+
+.metodo-item input[type="radio"] {
+    margin: 0;
+    accent-color: var(--membresia-primary);
+}
+
+.metodo-item label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.metodo-item i {
+    color: var(--membresia-primary);
+    width: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding-top: 56px;
+    }
+    
+    .page-title {
+        padding: 16px 0;
+    }
+    
+    .page-title h1 {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 32px 0;
+    }
+    
+    .section-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .membership-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .membership-details {
+        padding: 20px;
+    }
+    
+    .membership-actions {
+        flex-direction: column;
+    }
+    
+    .plans-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .payment-methods-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .payment-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .payment-details {
+        text-align: center;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 16px;
+    }
+    
+    .modal-footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .page-title h1 {
+        font-size: 1.75rem;
+    }
+    
+    .membership-header {
+        padding: 20px;
+    }
+    
+    .membership-details {
+        padding: 16px;
+    }
+    
+    .plan-header {
+        padding: 20px 16px;
+    }
+    
+    .plan-features {
+        padding: 16px;
+    }
+    
+    .btn-plan {
+        width: calc(100% - 32px);
+        margin: 0 16px 16px;
+    }
+    
+    .payment-method {
+        padding: 20px 16px;
+    }
+    
+    .payment-methods-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .mensaje-sin-membresia,
+    .mensaje-error,
+    .mensaje-sin-pagos {
+        padding: 24px 16px;
+    }
+}
+
+/* Estados de focus */
+.btn:focus,
+.btn-plan:focus,
+.modal-close:focus {
+    outline: 2px solid var(--membresia-primary);
+    outline-offset: 2px;
+}
+
+/* Animaciones adicionales */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-card,
+.plan-card,
+.payment-item {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.plan-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.plan-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
